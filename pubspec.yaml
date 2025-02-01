@@ -29,7 +29,6 @@ flutter:
       android:
         ffiPlugin: true
         package:
-          
       ios:
         ffiPlugin: true
       linux:
