@@ -1,92 +1,32 @@
-# lite_rt_for_flutter
 
-A new Flutter FFI plugin project.
+<p align="center">
+    <br>
+    <img src="./.github/readme/lite_rt_for_flutter.jpg"/>
+    </br>
+</p>
 
-## Getting Started
+**IMPORTANT, READ THIS BEFORE USING THIS PLUGIN!**
+* **This is NOT an official implementation, [Google's official plugin is here](https://pub.dev/packages/tflite_flutter)**
+  * For proper support please use that plugin
+* **I created this plugin to use in my own applications as I encountered various difficulties with the official plugin.**
+  * Therefore, the main use case is that it works in my own applications, but it may be useful for others, which is why I opened sourced it.
 
-This project is a starting point for a Flutter
-[FFI plugin](https://flutter.dev/to/ffi-package),
-a specialized package that includes native code directly invoked with Dart FFI.
+## LiteRT (TF Lite) for Flutter
 
-## Project structure
+This plugin provides bindings for LiteRT (formerly TF lite) for standalone Flutter.
 
-This template uses the following structure:
+The only real difference between this (except some convenience methods) and the standalone dart package is that LiteRT binaries can be included using the additioal libs packages:
 
-* `src`: Contains the native source code, and a CmakeFile.txt file for building
-  that source code into a dynamic library.
+* [lite_rt_for_flutter_libs](https://github.com/CaptainDario/lite_rt_for_flutter_libs/)
+  * Includes the base LiteRT runtime with XNNPack delegate
+* GPU coming soon
+* CoreML coming soon
+* Web coming soon
+* Flex Ops coming soon
 
-* `lib`: Contains the Dart code that defines the API of the plugin, and which
-  calls into the native code using `dart:ffi`.
+For a slightly more detailed example, see [the dart package](https://github.com/CaptainDario/lite_rt_for_dart?tab=readme-ov-file#example).
+For a full example see the [examples folder](./example/)
 
-* platform folders (`android`, `ios`, `windows`, etc.): Contains the build files
-  for building and bundling the native code library with the platform application.
+## I want to use my own libs
 
-## Building and bundling native code
-
-The `pubspec.yaml` specifies FFI plugins as follows:
-
-```yaml
-  plugin:
-    platforms:
-      some_platform:
-        ffiPlugin: true
-```
-
-This configuration invokes the native build for the various target platforms
-and bundles the binaries in Flutter applications using these FFI plugins.
-
-This can be combined with dartPluginClass, such as when FFI is used for the
-implementation of one platform in a federated plugin:
-
-```yaml
-  plugin:
-    implements: some_other_plugin
-    platforms:
-      some_platform:
-        dartPluginClass: SomeClass
-        ffiPlugin: true
-```
-
-A plugin can have both FFI and method channels:
-
-```yaml
-  plugin:
-    platforms:
-      some_platform:
-        pluginClass: SomeName
-        ffiPlugin: true
-```
-
-The native build systems that are invoked by FFI (and method channel) plugins are:
-
-* For Android: Gradle, which invokes the Android NDK for native builds.
-  * See the documentation in android/build.gradle.
-* For iOS and MacOS: Xcode, via CocoaPods.
-  * See the documentation in ios/lite_rt_for_flutter.podspec.
-  * See the documentation in macos/lite_rt_for_flutter.podspec.
-* For Linux and Windows: CMake.
-  * See the documentation in linux/CMakeLists.txt.
-  * See the documentation in windows/CMakeLists.txt.
-
-## Binding to native code
-
-To use the native code, bindings in Dart are needed.
-To avoid writing these by hand, they are generated from the header file
-(`src/lite_rt_for_flutter.h`) by `package:ffigen`.
-Regenerate the bindings by running `dart run ffigen --config ffigen.yaml`.
-
-## Invoking native code
-
-Very short-running native functions can be directly invoked from any isolate.
-For example, see `sum` in `lib/lite_rt_for_flutter.dart`.
-
-Longer-running functions should be invoked on a helper isolate to avoid
-dropping frames in Flutter applications.
-For example, see `sumAsync` in `lib/lite_rt_for_flutter.dart`.
-
-## Flutter help
-
-For help getting started with Flutter, view our
-[online documentation](https://docs.flutter.dev), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+Sure thing! See the [dart package](https://github.com/CaptainDario/lite_rt_for_dart) 
