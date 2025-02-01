@@ -19,14 +19,32 @@ The only real difference between this (except some convenience methods) and the 
 
 * [lite_rt_for_flutter_libs](https://github.com/CaptainDario/lite_rt_for_flutter_libs/)
   * Includes the base LiteRT runtime with XNNPack delegate
-* GPU coming soon
-* CoreML coming soon
-* Web coming soon
-* Flex Ops coming soon
 
-For a slightly more detailed example, see [the dart package](https://github.com/CaptainDario/lite_rt_for_dart?tab=readme-ov-file#example).
+The next things I will work on in order
+
+1. GPU coming soon
+2. CoreML coming soon
+3. Web coming soon
+4. Flex Ops (might come if I find some time)
+
+## Setup
+
+In the dependency section of `pubspec.yaml` file, add `lite_rt_for_flutter: <your version>`
+
+```dart
+import 'package:liter_rt_for_flutter/liter_rt_for_flutter.dart';
+
+// IMPORTANT: initialize the plugin
+initLiteRTFlutter()
+
+// Load a model from asset
+final interpreter = await Interpreter.fromAsset('asset/path/to/your/model.tflite');
+
+``` 
+
+How to use the library further, see [the dart package](https://github.com/CaptainDario/lite_rt_for_dart?tab=readme-ov-file#example).
 For a full example see the [examples folder](./example/)
 
 ## I want to use my own libs
 
-Sure thing! See the [dart package](https://github.com/CaptainDario/lite_rt_for_dart) 
+Sure thing! See the [dart package](https://github.com/CaptainDario/lite_rt_for_dart) to use any library. 
