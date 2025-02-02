@@ -7,7 +7,8 @@ list(APPEND FLUTTER_PLUGIN_LIST
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST
-  tflite_flutter
+  lite_rt_for_flutter
+  lite_rt_for_flutter_libs
 )
 
 set(PLUGIN_BUNDLED_LIBRARIES)
