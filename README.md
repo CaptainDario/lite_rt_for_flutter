@@ -20,12 +20,12 @@ The only real difference between this (except some convenience methods) and the 
 * [lite_rt_for_flutter_libs](https://github.com/CaptainDario/lite_rt_for_flutter_libs/)
   * Includes the base LiteRT runtime with XNNPack delegate
 
-The next things I will work on in order
-
-1. GPU coming soon
-2. CoreML coming soon
-3. Web coming soon
-4. Flex Ops (might come if I find some time)
+|        | Android | iOS | Windows | MacOS | Linux | Web | Web --wasm |
+|--------|:-------:|:---:|:-------:|:-----:|:-----:|:---:|:----------:|
+| Base   |    ✅    |  🚧  |    🚧    |   🚧   |   🚧   |  🚧  |      🚧     |
+| GPU    |    ❌    |  ❌  |    ❌    |   ❌   |   ❌   |  ❌  |      ❌     |
+| CoreML |    ❌    |  ❌  |    ❌    |   ❌   |   ❌   |  ❌  |      ❌     |
+| Flex   |    ❌    |  ❌  |    ❌    |   ❌   |   ❌   |  ❌  |      ❌     |
 
 ## Setup
 
