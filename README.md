@@ -27,12 +27,19 @@ The only real difference between this (except some convenience methods) and the 
 
 ✅ - supported ; 🚧 - working on it ; 📋 planned ; ⛔️ not planned ; ❌ - not supported by LiteRT
 
-* [lite_rt_for_flutter_libs](https://github.com/CaptainDario/lite_rt_for_flutter_libs/)
-  * Includes the Base LiteRT runtime with XNNPack delegate
-
 ## Setup
 
 In the dependency section of `pubspec.yaml` file, add `lite_rt_for_flutter: <your version>`
+
+Additionally, you need at least the base LiteRT, choose the packages you need
+
+```yaml
+dependencies:
+  # Includes the Base LiteRT runtime with XNNPack delegate
+  lite_rt_for_flutter_libs:
+    git:
+      url: https://github.com/CaptainDario/lite_rt_for_flutter_libs/lite_rt_for_flutter_libs
+```
 
 ```dart
 import 'package:liter_rt_for_flutter/liter_rt_for_flutter.dart';
