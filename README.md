@@ -22,7 +22,7 @@ The only real difference between this (except some convenience methods) and the 
 |        | arm \| x86 | arm \| x86 | arm \| x86 | arm \| x86 | arm \| x86 | arm \| x86 |            |
 | Base   |   ✅ \| ✅   |   🚧 \| 🚧   |   🚧 \| 🚧   |   🚧 \| 🚧   |   🚧 \| 🚧   |   🚧 \| 🚧   |      🚧     |
 | GPU    |   📋 \| 📋   |   📋 \| 📋   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
-| CoreML |   📋 \| 📋   |   📋 \| 📋   |   ❌ \| ❌   |   📋 \| 📋   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
+| CoreML |   📋 \| 📋   |   📋 \| 📋   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
 | Flex   |   📋 \| 📋   |   📋 \| 📋   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
 
 ✅ - supported ; 🚧 - working no it ; 📋 planned ; ⛔️ not planned ; ❌ - not supported by LiteRT
