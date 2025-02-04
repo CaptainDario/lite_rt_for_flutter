@@ -25,13 +25,6 @@ The only real difference between this (except some convenience methods) and the 
 | CoreML |   📋 \| 📋   |   📋 \| 📋   |   ❌ \| ❌   |   📋 \| 📋   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
 | Flex   |   📋 \| 📋   |   📋 \| 📋   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
 
-|        | Android | iOS | Windows | MacOS | Linux | Web | Web --wasm |
-|--------|:-------:|:---:|:-------:|:-----:|:-----:|:---:|:----------:|
-| Base   |    🚧    |  🚧  |    🚧    |   🚧   |   🚧   |  📋  |      📋     |
-| GPU    |    📋    |  📋  |    ❌    |   ❌   |   ❌   |  ❌  |      ❌     |
-| CoreML |          |  📋  |         |   ❌   |        |      |            |
-| Flex   |    ⛔️    |  ⛔️  |    ❌    |   ❌   |   ❌   |  ❌  |      ❌     |
-
 ✅ - supported ; 🚧 - working no it ; 📋 planned ; ⛔️ not planned ; ❌ - not supported by LiteRT
 
 * [lite_rt_for_flutter_libs](https://github.com/CaptainDario/lite_rt_for_flutter_libs/)
