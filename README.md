@@ -38,7 +38,9 @@ dependencies:
   # Includes the Base LiteRT runtime with XNNPack delegate
   lite_rt_for_flutter_libs:
     git:
-      url: https://github.com/CaptainDario/lite_rt_for_flutter_libs/lite_rt_for_flutter_libs
+      url:  https://github.com/CaptainDario/lite_rt_for_flutter_libs
+      path: lite_rt_for_flutter_libs
+      ref: <THE_VERSION_YOU_WANT>
 ```
 
 ```dart
