@@ -31,10 +31,22 @@ The only real difference between this (except some convenience methods) and the 
 
 In the dependency section of `pubspec.yaml` file, add `lite_rt_for_flutter: <your version>`
 
-Additionally, you need at least the base LiteRT, choose the packages you need
+```yaml
+dependencies:
+  # The binding between Flutter/Dart and native code
+  lite_rt_for_flutter:
+    git:
+      url:  https://github.com/CaptainDario/lite_rt_for_flutter
+      ref: <THE_VERSION_YOU_WANT>
+```
+
+Additionally, you need at least the base LiteRT, choose the packages you need from below
 
 ```yaml
 dependencies:
+
+  ...
+
   # Includes the Base LiteRT runtime with XNNPack delegate
   lite_rt_for_flutter_libs:
     git:
