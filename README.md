@@ -17,15 +17,15 @@ This plugin provides bindings for LiteRT (formerly TF lite) for standalone Flutt
 
 The only real difference between this (except some convenience methods) and the standalone dart package is that LiteRT binaries can be included using the additional libs packages:
 
-|        |   Android  |     iOS    |   Windows  |    MacOS   |    Linux   |     Web    | Web --wasm |
-|--------|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
-|        | arm \| x86 | arm \| x86 | arm \| x86 | arm \| x86 | arm \| x86 | arm \| x86 |            |
-| Base   |   🚧 \| 🚧   |   🚧 \| 🚧   |   🚧 \| 🚧   |   🚧 \| 🚧   |   🚧 \| 🚧   |   🚧 \| 🚧   |      🚧     |
-| GPU    |   📋 \| 📋   |   📋 \| 📋   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
-| CoreML |   📋 \| 📋   |   📋 \| 📋   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
-| Flex   |   📋 \| 📋   |   📋 \| 📋   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
+|        |   Android  |     iOS    |   Windows  |    MacOS   |    Linux   |     Web    |
+|--------|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+|        | arm \| x86 | arm \| x86 | arm \| x86 | arm \| x86 | arm \| x86 |            |
+| Base   |   🚧 \| 🚧   |   🚧 \| 🚧   |   🚧 \| 🚧   |   🚧 \| 🚧   |   🚧 \| 🚧   |   🚧 \| 🚧   |
+| GPU    |   📋 \| 📋   |   📋 \| 📋   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
+| CoreML |   ⛔ \| ⛔   |   📋 \| 📋   |   ⛔ \| ⛔   |   ❌ \| ❌   |   ⛔ \| ⛔   |   ⛔ \| ⛔   |
+| Flex   |   🚫 \| 🚫   |   🚫 \| 🚫   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
 
-✅ - supported ; 🚧 - working on it ; 📋 planned ; ⛔️ not planned ; ❌ - not supported by LiteRT
+✅ - supported ; 🚧 - working on it ; 📋 planned ; ⛔ - not applicable ; 🚫 not planned ; ❌ - not supported by LiteRT
 
 ## Setup
 
