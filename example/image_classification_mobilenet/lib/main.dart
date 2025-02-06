@@ -18,11 +18,17 @@ import 'dart:io';
 
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:lite_rt_for_flutter/lite_rt_for_flutter.dart';
+import 'package:lite_rt_for_flutter_libs/lite_rt_for_flutter_libs.dart';
 
 import 'ui/camera.dart';
 import 'ui/gallery.dart';
 
 Future<void> main() async {
+
+  initLiteRTFlutter();
+  //initLiteRTFromLib(getBaseLibrary());
+
   runApp(const BottomNavigationBarApp());
 }
 
@@ -62,6 +68,7 @@ class _BottomNavigationBarExampleState
   }
 
   initPages() async {
+
     _widgetOptions = [const GalleryScreen()];
 
     if (cameraIsAvailable) {
@@ -73,15 +80,6 @@ class _BottomNavigationBarExampleState
     setState(() {});
   }
 
-  void _onItemTapped(int index) {
-    if (!cameraIsAvailable) {
-      debugPrint("This is not supported on your current platform");
-      return;
-    }
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -92,21 +90,6 @@ class _BottomNavigationBarExampleState
       ),
       body: Center(
         child: _widgetOptions?.elementAt(_selectedIndex),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.image),
-            label: 'Gallery screen',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.camera),
-            label: 'Live Camera',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber[800],
-        onTap: _onItemTapped,
       ),
     );
   }

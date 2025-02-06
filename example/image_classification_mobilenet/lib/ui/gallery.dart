@@ -65,12 +65,6 @@ class _GalleryScreenState extends State<GalleryScreen> {
   }
 
   @override
-  void dispose() {
-    imageClassificationHelper?.close();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Column(

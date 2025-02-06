@@ -94,7 +94,6 @@ class CameraScreenState extends State<CameraScreen>
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
     cameraController.dispose();
-    imageClassificationHelper.close();
     super.dispose();
   }
 

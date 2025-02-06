@@ -16,22 +16,20 @@
 
 import 'dart:developer';
 import 'dart:io';
-import 'dart:isolate';
 
 import 'package:camera/camera.dart';
 import 'package:flutter/services.dart';
 import 'package:image/image.dart';
 import 'package:lite_rt_for_flutter/lite_rt_for_flutter.dart';
 
-import 'isolate_inference.dart';
+import 'inference.dart';
 
 class ImageClassificationHelper {
   static const modelPath = 'assets/models/mobilenet_quant.tflite';
   static const labelsPath = 'assets/models/labels.txt';
 
-  late final Interpreter interpreter;
+  late final IsolateInterpreter interpreter;
   late final List<String> labels;
-  late final IsolateInference isolateInference;
   late Tensor inputTensor;
   late Tensor outputTensor;
 
@@ -56,11 +54,13 @@ class ImageClassificationHelper {
     }
 
     // Load model from assets
-    interpreter = await FlutterInterpreter.fromAsset(modelPath, options: options);
+    ByteData rawAssetFile = await rootBundle.load(modelPath);
+    final modelBytes = rawAssetFile.buffer.asUint8List();
+    interpreter = await IsolateInterpreter.createFromBuffer(modelBytes);
     // Get tensor input shape [1, 224, 224, 3]
-    inputTensor = interpreter.getInputTensors().first;
+    inputTensor = (await interpreter.getInputTensors()).first;
     // Get tensor output shape [1, 1001]
-    outputTensor = interpreter.getOutputTensors().first;
+    outputTensor = (await interpreter.getOutputTensors()).first;
 
     log('Interpreter loaded successfully');
   }
@@ -74,35 +74,28 @@ class ImageClassificationHelper {
   Future<void> initHelper() async {
     _loadLabels();
     _loadModel();
-    isolateInference = IsolateInference();
-    await isolateInference.start();
   }
 
   Future<Map<String, double>> _inference(InferenceModel inferenceModel) async {
-    ReceivePort responsePort = ReceivePort();
-    isolateInference.sendPort
-        .send(inferenceModel..responsePort = responsePort.sendPort);
-    // get inference result.
-    var results = await responsePort.first;
+      
+    final results = runInference(inferenceModel);
     return results;
+
   }
 
   // inference camera frame
   Future<Map<String, double>> inferenceCameraFrame(
       CameraImage cameraImage) async {
-    var isolateModel = InferenceModel(cameraImage, null, interpreter.address,
-        labels, inputTensor.shape, outputTensor.shape);
+    var isolateModel = InferenceModel(cameraImage, null, interpreter,
+      labels, inputTensor.shape, outputTensor.shape);
     return _inference(isolateModel);
   }
 
   // inference still image
   Future<Map<String, double>> inferenceImage(Image image) async {
-    var isolateModel = InferenceModel(null, image, interpreter.address, labels,
-        inputTensor.shape, outputTensor.shape);
+    var isolateModel = InferenceModel(null, image, interpreter,
+      labels, inputTensor.shape, outputTensor.shape);
     return _inference(isolateModel);
   }
 
-  Future<void> close() async {
-    isolateInference.close();
-  }
 }
