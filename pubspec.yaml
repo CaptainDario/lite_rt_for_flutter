@@ -14,8 +14,6 @@ dependencies:
   plugin_platform_interface: ^2.0.2
   lite_rt_for_dart:
     path: ../lite_rt_for_dart
-  lite_rt_for_flutter_libs:
-    path: ../lite_rt_for_flutter_libs/lite_rt_for_flutter_libs
 
 dev_dependencies:
   ffi: ^2.1.3
