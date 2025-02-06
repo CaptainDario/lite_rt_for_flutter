@@ -11,4 +11,4 @@ PRODUCT_NAME = image_classification_mobilenet
 PRODUCT_BUNDLE_IDENTIFIER = org.tensorflow.flutter.imageClassificationMobilenet
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2023 org.tensorflow.flutter. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2025 org.tensorflow.flutter. All rights reserved.

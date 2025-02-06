@@ -101,8 +101,3 @@ install(FILES "${AOT_LIBRARY}" DESTINATION "${INSTALL_BUNDLE_DATA_DIR}"
   CONFIGURATIONS Profile;Release
   COMPONENT Runtime)
 
-# get tf lite binaries
-install(
-  FILES ${PROJECT_BUILD_DIR}/../blobs/libtensorflowlite_c-win.dll 
-  DESTINATION ${INSTALL_BUNDLE_DATA_DIR}/../blobs/
-)

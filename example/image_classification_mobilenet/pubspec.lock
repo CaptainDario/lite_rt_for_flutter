@@ -532,7 +532,7 @@ packages:
     source: path
     version: "0.0.1"
   lite_rt_for_flutter_libs:
-    dependency: transitive
+    dependency: "direct main"
     description:
       path: "../../../lite_rt_for_flutter_libs/lite_rt_for_flutter_libs"
       relative: true
