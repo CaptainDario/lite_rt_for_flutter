@@ -49,7 +49,7 @@ class ImageClassificationHelper {
     // }
 
     // Use Metal Delegate
-    if (Platform.isIOS) {
+    if (Platform.isIOS && false) {
       options.addDelegate(GpuDelegate());
     }
 

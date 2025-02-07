@@ -19,7 +19,6 @@ import 'dart:io';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:lite_rt_for_flutter/lite_rt_for_flutter.dart';
-import 'package:lite_rt_for_flutter_libs/lite_rt_for_flutter_libs.dart';
 
 import 'ui/camera.dart';
 import 'ui/gallery.dart';
@@ -57,7 +56,7 @@ class _BottomNavigationBarExampleState
   int _selectedIndex = 0;
   List<Widget>? _widgetOptions;
 
-  bool cameraIsAvailable = Platform.isAndroid || Platform.isIOS;
+  bool cameraIsAvailable = Platform.isAndroid;
 
   @override
   void initState() {
