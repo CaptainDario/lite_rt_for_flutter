@@ -19,13 +19,13 @@ The only real difference between this (except some convenience methods) and the 
 
 |        |   Android  |     iOS    |   Windows  |    MacOS   |    Linux   |     Web    |
 |--------|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
-|        | arm \| x86 | arm \| x86 | arm \| x86 | arm \| x86 | arm \| x86 | js \| wasm |
-| Base   |   ✅ \| ✅   |   ✅ \| ✅   |   🚧 \| 🚧   |   ✅ \| ✅   |   🚧 \| 🚧   |   🚧 \| 🚧   |
-| GPU    |   📋 \| 📋   |   📋 \| 📋   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
-| CoreML |   ⛔ \| ⛔   |   📋 \| 📋   |   ⛔ \| ⛔   |   ❌ \| ❌   |   ⛔ \| ⛔   |   ⛔ \| ⛔   |
-| Flex   |   🚫 \| 🚫   |   🚫 \| 🚫   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
+|        | arm \| x86 | arm | arm \| x86 | arm \| x86 | arm \| x86 | js \| wasm |
+| Base   |   ✅ \| ✅   |   ✅   |   [ℹ️](https://github.com/CaptainDario/lite_rt_for_flutter_libs/issues/1) \| 🚧   |   ✅ \| ✅   |   🚧   |   🚧 \| 🚧   |
+| GPU    |   📋 \| 📋   |   📋   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
+| CoreML |   ⛔ \| ⛔   |   📋   |   ⛔ \| ⛔   |   ❌ \| ❌   |   ⛔ \| ⛔   |   ⛔ \| ⛔   |
+| Flex   |   🚫 \| 🚫   |   🚫   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
 
-✅ - supported ; 🚧 - working on it ; 📋 planned ; ⛔ - not applicable ; 🚫 not planned ; ❌ - not supported by LiteRT
+✅ - supported ; 🚧 - working on it ; 📋 planned ; ⛔ - not applicable ; 🚫 not planned ; ❌ - not supported by LiteRT ; ℹ️ - click to learn more
 
 ## Setup
 
