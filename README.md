@@ -19,8 +19,8 @@ The only real difference between this (except some convenience methods) and the 
 
 |        |   Android  |     iOS    |   Windows  |    MacOS   |    Linux   |     Web    |
 |--------|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
-|        | arm \| x86 | arm \| x86 | arm \| x86 | arm \| x86 | arm \| x86 |            |
-| Base   |   🚧 \| 🚧   |   🚧 \| 🚧   |   🚧 \| 🚧   |   🚧 \| 🚧   |   🚧 \| 🚧   |   🚧 \| 🚧   |
+|        | arm \| x86 | arm \| x86 | arm \| x86 | arm \| x86 | arm \| x86 | js \| wasm |
+| Base   |   ✅ \| ✅   |   ✅ \| ✅   |   🚧 \| 🚧   |   ✅ \| ✅   |   🚧 \| 🚧   |   🚧 \| 🚧   |
 | GPU    |   📋 \| 📋   |   📋 \| 📋   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
 | CoreML |   ⛔ \| ⛔   |   📋 \| 📋   |   ⛔ \| ⛔   |   ❌ \| ❌   |   ⛔ \| ⛔   |   ⛔ \| ⛔   |
 | Flex   |   🚫 \| 🚫   |   🚫 \| 🚫   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
@@ -62,7 +62,7 @@ import 'package:liter_rt_for_flutter/liter_rt_for_flutter.dart';
 initLiteRTFlutter()
 
 // Load a model from asset
-final interpreter = await Interpreter.fromAsset('asset/path/to/your/model.tflite');
+final interpreter = await FlutterInterpreter.fromAsset('asset/path/to/your/model.tflite');
 
 ``` 
 
