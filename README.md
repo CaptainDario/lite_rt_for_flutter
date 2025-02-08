@@ -13,19 +13,32 @@
 
 ## LiteRT (TF Lite) for Flutter
 
-This plugin provides bindings for LiteRT (formerly TF lite) for standalone Flutter.
+This plugin provides bindings for LiteRT (formerly TF lite) for Flutter.
 
 The only real difference between this (except some convenience methods) and the standalone dart package is that LiteRT binaries can be included using the additional libs packages:
 
 |        |   Android  |     iOS    |   Windows  |    MacOS   |    Linux   |     Web    |
 |--------|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
 |        | arm \| x86 |     arm    | arm \| x86 | arm \| x86 | arm \| x86 | js \| wasm |
-| Base   |   ✅ \| ✅   |   ✅   |   [ℹ️](https://github.com/CaptainDario/lite_rt_for_flutter_libs/issues/1) \| 🚧   |   ✅ \| ✅   |   🚧   |   🚧 \| 🚧   |
-| GPU    |   📋 \| 📋   |   📋   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
-| CoreML |   ⛔ \| ⛔   |   📋   |   ⛔ \| ⛔   |   ❌ \| ❌   |   ⛔ \| ⛔   |   ⛔ \| ⛔   |
-| Flex   |   🚫 \| 🚫   |   ✅   |   ❌ \| ❌   |   ❌ \| [ℹ️](https://github.com/google-ai-edge/LiteRT/issues/800)   |   ❌ \| ❌   |   ❌ \| ❌   |
+| Base   |     ✅     |   ✅   | [ℹ️](https://github.com/CaptainDario/lite_rt_for_flutter_libs/issues/1) \| 🚧 |   ✅ \| ✅   |   🚧   |   🚧 \| 🚧   |
+| GPU    |     📋     |   ✅   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
+| CoreML |     ⛔     |   ✅   |   ⛔ \| ⛔   | [ℹ️](https://github.com/google-ai-edge/LiteRT/issues/800) |   ⛔ \| ⛔   |   ⛔ \| ⛔   |
+| Flex   |     📋     |   ✅   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
 
-✅ - supported ; 🚧 - working on it ; 📋 planned ; ⛔ - not applicable ; 🚫 not planned ; ❌ - not supported by LiteRT ; ℹ️ - click to learn more
+✅ - supported ; 🚧 - working on it ; 📋 planned ; ⛔ - not applicable ; ❌ - not supported by LiteRT ; ℹ️ - click to learn more
+
+### Libs packages
+
+#### Native
+
+* [lite_rt_for_flutter_libs](https://github.com/CaptainDario/lite_rt_for_flutter_libs/tree/main/lite_rt_for_flutter_libs)
+* [lite_rt_for_flutter_libs_gpu_delegate](https://github.com/CaptainDario/lite_rt_for_flutter_libs/tree/main/lite_rt_for_flutter_libs_gpu_delegate)
+* [lite_rt_for_flutter_libs_core_ml_delegate](https://github.com/CaptainDario/lite_rt_for_flutter_libs/tree/main/lite_rt_for_flutter_libs_core_ml_delegate)
+* [lite_rt_for_flutter_libs_flex_delegate](https://github.com/CaptainDario/lite_rt_for_flutter_libs/tree/main/lite_rt_for_flutter_libs_flex_delegate)
+
+#### Web
+
+* []()
 
 ## Setup
 
