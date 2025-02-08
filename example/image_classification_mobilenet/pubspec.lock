@@ -538,6 +538,20 @@ packages:
       relative: true
     source: path
     version: "2.11.0"
+  lite_rt_for_flutter_libs_core_ml_delegate:
+    dependency: "direct main"
+    description:
+      path: "../../../lite_rt_for_flutter_libs/lite_rt_for_flutter_libs_core_ml_delegate"
+      relative: true
+    source: path
+    version: "0.0.1"
+  lite_rt_for_flutter_libs_gpu_delegate:
+    dependency: "direct main"
+    description:
+      path: "../../../lite_rt_for_flutter_libs/lite_rt_for_flutter_libs_gpu_delegate"
+      relative: true
+    source: path
+    version: "0.0.1"
   logging:
     dependency: transitive
     description:

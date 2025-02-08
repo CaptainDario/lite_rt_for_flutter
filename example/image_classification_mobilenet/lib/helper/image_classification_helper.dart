@@ -53,9 +53,12 @@ class ImageClassificationHelper {
     //   options.addDelegate(GpuDelegateV2());
     // }
 
-    // Use Metal Delegate
+    // Use Metal or CoreML Delegate
     if (Platform.isIOS || Platform.isMacOS) {
-      //options.addDelegate(GpuDelegate(options: GpuDelegateOptions()));
+
+      //final delegate = GpuDelegate(options: GpuDelegateOptions());
+      final delegate = CoreMlDelegate(options: CoreMlDelegateOptions());
+      options.addDelegate(delegate);
     }
 
     // Load model from assets
