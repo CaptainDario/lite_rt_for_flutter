@@ -31,14 +31,19 @@ The only real difference between this (except some convenience methods) and the 
 
 #### Native
 
-* [lite_rt_for_flutter_libs](https://github.com/CaptainDario/lite_rt_for_flutter_libs/tree/main/lite_rt_for_flutter_libs)
-* [lite_rt_for_flutter_libs_gpu_delegate](https://github.com/CaptainDario/lite_rt_for_flutter_libs/tree/main/lite_rt_for_flutter_libs_gpu_delegate)
-* [lite_rt_for_flutter_libs_core_ml_delegate](https://github.com/CaptainDario/lite_rt_for_flutter_libs/tree/main/lite_rt_for_flutter_libs_core_ml_delegate)
-* [lite_rt_for_flutter_libs_flex_delegate](https://github.com/CaptainDario/lite_rt_for_flutter_libs/tree/main/lite_rt_for_flutter_libs_flex_delegate)
+* Base
+  * [lite_rt_for_flutter_libs](https://github.com/CaptainDario/lite_rt_for_flutter_libs/tree/main/lite_rt_for_flutter_libs)
+* GPU
+  * [lite_rt_for_flutter_libs_gpu_delegate](https://github.com/CaptainDario/lite_rt_for_flutter_libs/tree/main/lite_rt_for_flutter_libs_gpu_delegate)
+* CoreML
+  * [lite_rt_for_flutter_libs_core_ml_delegate](https://github.com/CaptainDario/lite_rt_for_flutter_libs/tree/main/lite_rt_for_flutter_libs_core_ml_delegate)
+* Flex
+  * [lite_rt_for_flutter_libs_flex_delegate](https://github.com/CaptainDario/lite_rt_for_flutter_libs/tree/main/lite_rt_for_flutter_libs_flex_delegate)
 
 #### Web
 
-* []()
+* Base
+  * []()
 
 ## Setup
 
