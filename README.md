@@ -21,7 +21,7 @@ The only real difference between this (except some convenience methods) and the 
 |--------|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
 |        | arm \| x86 |     arm    | arm \| x86 | arm \| x86 | arm \| x86 | js \| wasm |
 | Base   |     ✅     |   ✅   | [ℹ️](https://github.com/CaptainDario/lite_rt_for_flutter_libs/issues/1) \| 🚧 |   ✅ \| ✅   |   🚧   |   🚧 \| 🚧   |
-| GPU    |     📋     |   ✅   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
+| GPU    |     ✅     |   ✅   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
 | CoreML |     ⛔     |   ✅   |   ⛔ \| ⛔   | [ℹ️](https://github.com/google-ai-edge/LiteRT/issues/800) |   ⛔ \| ⛔   |   ⛔ \| ⛔   |
 | Flex   |     📋     |   ✅   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
 

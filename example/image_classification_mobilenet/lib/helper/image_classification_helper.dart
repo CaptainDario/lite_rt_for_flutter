@@ -44,14 +44,12 @@ class ImageClassificationHelper {
 
     // Use XNNPACK Delegate
     if (Platform.isAndroid) {
-      options.addDelegate(XNNPackDelegate(options: XNNPackDelegateOptions(numThreads: 2)));
+      
+      //final del = XNNPackDelegate(options: XNNPackDelegateOptions(numThreads: 2));
+      final del = GpuDelegateV2();
+      
+      options.addDelegate(del);
     }
-
-    // Use GPU Delegate
-    // doesn't work on emulator
-    // if (Platform.isAndroid) {
-    //   options.addDelegate(GpuDelegateV2());
-    // }
 
     // Use Metal or CoreML Delegate
     if (Platform.isIOS || Platform.isMacOS) {
