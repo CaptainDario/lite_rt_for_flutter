@@ -73,6 +73,8 @@ dependencies:
       ref: <THE_VERSION_YOU_WANT>
 ```
 
+Finally, run some ML on-device!
+
 ```dart
 import 'package:liter_rt_for_flutter/liter_rt_for_flutter.dart';
 
@@ -84,8 +86,9 @@ final interpreter = await FlutterInterpreter.fromAsset('asset/path/to/your/model
 
 ``` 
 
-How to use the library further, see [the dart package](https://github.com/CaptainDario/lite_rt_for_dart?tab=readme-ov-file#example).
-For a full example see the [examples folder](./example/)
+You can learn more about how to use this library here:
+  * [the dart package](https://github.com/CaptainDario/lite_rt_for_dart?tab=readme-ov-file#example).
+  * For a full example see the [examples folder](./example/)
 
 ## I want to use my own libs
 
