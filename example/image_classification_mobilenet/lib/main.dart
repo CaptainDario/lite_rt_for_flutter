@@ -26,7 +26,6 @@ import 'ui/gallery.dart';
 Future<void> main() async {
 
   initLiteRTFlutter();
-  //initLiteRTFromLib(getBaseLibrary());
 
   runApp(const BottomNavigationBarApp());
 }

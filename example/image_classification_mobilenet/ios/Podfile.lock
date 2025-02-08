@@ -6,6 +6,7 @@ PODS:
     - Flutter
   - lite_rt_for_flutter_libs (0.0.1):
     - Flutter
+    - TensorFlowLiteSelectTfOps (= 2.17.0)
     - TensorFlowLiteSwift (= 2.17.0)
   - path_provider_foundation (0.0.1):
     - Flutter
@@ -13,6 +14,7 @@ PODS:
   - TensorFlowLiteC (2.17.0):
     - TensorFlowLiteC/Core (= 2.17.0)
   - TensorFlowLiteC/Core (2.17.0)
+  - TensorFlowLiteSelectTfOps (2.17.0)
   - TensorFlowLiteSwift (2.17.0):
     - TensorFlowLiteSwift/Core (= 2.17.0)
   - TensorFlowLiteSwift/Core (2.17.0):
@@ -30,6 +32,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - TensorFlowLiteC
+    - TensorFlowLiteSelectTfOps
     - TensorFlowLiteSwift
 
 EXTERNAL SOURCES:
@@ -48,9 +51,10 @@ SPEC CHECKSUMS:
   camera_avfoundation: dd002b0330f4981e1bbcb46ae9b62829237459a4
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   image_picker_ios: c560581cceedb403a6ff17f2f816d7fea1421fc1
-  lite_rt_for_flutter_libs: c993b5c7275194bf136a002bc98232897ab17afa
+  lite_rt_for_flutter_libs: 02d959bc3714eb3e0155d2449f0f03200987cfbe
   path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
   TensorFlowLiteC: eac6d689a8d391d1b202dc59e3d9165ba64aaf73
+  TensorFlowLiteSelectTfOps: e991d57ef32c40330a0bfcedd7955e6a5cab2efe
   TensorFlowLiteSwift: 723fe42222815e72490c79feeff05305530de393
 
 PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796

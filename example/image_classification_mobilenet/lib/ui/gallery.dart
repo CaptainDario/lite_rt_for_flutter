@@ -34,6 +34,7 @@ class _GalleryScreenState extends State<GalleryScreen> {
   img.Image? image;
   Map<String, double>? classification;
   bool cameraIsAvailable = Platform.isAndroid || Platform.isIOS;
+  int? inferenceTime;
 
   @override
   void initState() {
@@ -60,6 +61,8 @@ class _GalleryScreenState extends State<GalleryScreen> {
       image = img.decodeImage(imageData);
       setState(() {});
       classification = await imageClassificationHelper?.inferenceImage(image!);
+      inferenceTime = await imageClassificationHelper?.
+        interpreter.getLastNativeInferenceDurationMicroSeconds();
       setState(() {});
     }
   }
@@ -140,6 +143,7 @@ class _GalleryScreenState extends State<GalleryScreen> {
                     Text('Bits per channel: ${image?.bitsPerChannel}'),
                     Text('Height: ${image?.height}'),
                     Text('Width: ${image?.width}'),
+                    Text('Inference time (milliseconds): ${(inferenceTime??0)/1000}')
                   ],
                   const Spacer(),
                   // Show classification result

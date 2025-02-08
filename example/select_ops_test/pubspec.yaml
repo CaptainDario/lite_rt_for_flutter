@@ -1,0 +1,30 @@
+name: select_ops_test
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  lite_rt_for_flutter:
+    path: ../../
+  lite_rt_for_flutter_libs:
+    path: ../../../lite_rt_for_flutter_libs/lite_rt_for_flutter_libs/
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - select_ops_model/converted_model.tflite
+    - select_ops_model/mobilenet_quant.tflite

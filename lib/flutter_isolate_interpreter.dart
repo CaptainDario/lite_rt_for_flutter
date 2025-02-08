@@ -17,10 +17,14 @@ extension FlutterIsolateInterpreter on IsolateInterpreter{
   /// ```dart
   /// final interpreter = await FlutterInterpreter.fromAsset('assets/your_model.tflite');
   /// ```
-  static Future<FlutterIsolateInterpreter> createFromAsset(String assetName,
-      {InterpreterOptions? options, InterpreterOptions options}) async {
+  static Future<IsolateInterpreter> createFromAsset(String assetName, {
+    String debugName =  'FlutterTfLiteInterpreterIsolate',
+    InterpreterOptions? options}) async {
+
     Uint8List buffer = await getBufferFromAsset(assetName);
-    return await IsolateInterpreter.createFromBuffer(buffer, options: options);
+    return await IsolateInterpreter.createFromBuffer(buffer,
+      debugName: debugName, options: options);
+
   }
 
 }

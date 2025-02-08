@@ -15,11 +15,14 @@
  */
 
 import 'dart:developer';
+import 'dart:ffi';
 import 'dart:io';
 
 import 'package:camera/camera.dart';
 import 'package:flutter/services.dart';
 import 'package:image/image.dart';
+import 'package:lite_rt_for_flutter/flutter_interpreter.dart';
+import 'package:lite_rt_for_flutter/flutter_isolate_interpreter.dart';
 import 'package:lite_rt_for_flutter/lite_rt_for_flutter.dart';
 
 import 'inference.dart';
@@ -33,13 +36,15 @@ class ImageClassificationHelper {
   late Tensor inputTensor;
   late Tensor outputTensor;
 
+  int? inferenceTime;
+
   // Load model
   Future<void> _loadModel() async {
-    final options = InterpreterOptions();
+    var options = InterpreterOptions();
 
     // Use XNNPACK Delegate
     if (Platform.isAndroid) {
-      options.addDelegate(XNNPackDelegate());
+      options.addDelegate(XNNPackDelegate(options: XNNPackDelegateOptions(numThreads: 2)));
     }
 
     // Use GPU Delegate
@@ -49,14 +54,14 @@ class ImageClassificationHelper {
     // }
 
     // Use Metal Delegate
-    if (Platform.isIOS && false) {
-      options.addDelegate(GpuDelegate());
+    if (Platform.isIOS || Platform.isMacOS) {
+      //options.addDelegate(GpuDelegate(options: GpuDelegateOptions()));
     }
 
     // Load model from assets
-    ByteData rawAssetFile = await rootBundle.load(modelPath);
-    final modelBytes = rawAssetFile.buffer.asUint8List();
-    interpreter = await IsolateInterpreter.createFromBuffer(modelBytes);
+    interpreter = await FlutterIsolateInterpreter.createFromAsset(modelPath,
+      options: options);
+
     // Get tensor input shape [1, 224, 224, 3]
     inputTensor = (await interpreter.getInputTensors()).first;
     // Get tensor output shape [1, 1001]

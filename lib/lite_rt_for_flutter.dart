@@ -12,7 +12,9 @@ import 'package:lite_rt_for_flutter/libs.dart';
 void initLiteRTFlutter({bool loadLibs = false}){
 
   initLiteRT(getLiteRTBaseLibraryPath(),
-    // TODO gpuDelegatelibraryPath: gpuDelegatelibraryPath,
-    loadLibs: loadLibs);
+    gpuDelegatelibraryPath   : getLiteRTGpuDelegateLibraryPath(),
+    coreMLDelegatelibraryPath: getLiteRTCoreMLDelegateLibraryPath(),
+    flexDelegatelibraryPath  : getLiteRTFlexDelegateLibraryPath()
+    );
 
 }
