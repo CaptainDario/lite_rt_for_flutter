@@ -47,15 +47,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<bool> init() async {
     initLiteRTFlutter();
-    print("loadiung");
     ByteData rawAssetFile = await rootBundle.load("select_ops_model/converted_model.tflite");
-    print("got asset");
     final b = rawAssetFile.buffer.asUint8List();
     InterpreterOptions o = InterpreterOptions();
     o.addDelegate(XNNPackDelegate());
-    print("got buffer");
     interpreter = Interpreter.fromBuffer(b);
-    print("loaded model");
     return false;
   }
 
@@ -75,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 const Text(
-                  'Press the button to print x',
+                  'Press the button to check that there is no exception',
                 ),
               ],
             ),

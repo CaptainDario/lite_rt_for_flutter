@@ -1,23 +1,26 @@
 PODS:
   - Flutter (1.0.0)
-  - lite_rt_for_flutter_libs (0.0.2):
+  - lite_rt_for_flutter_libs (0.0.1):
     - Flutter
-    - TensorFlowLiteSelectTfOps (~> 0.0.1-nightly)
-    - TensorFlowLiteSwift (~> 0.0.1-nightly)
-  - TensorFlowLiteC (0.0.1-nightly.20250126):
-    - TensorFlowLiteC/Core (= 0.0.1-nightly.20250126)
-  - TensorFlowLiteC/Core (0.0.1-nightly.20250126)
-  - TensorFlowLiteSelectTfOps (0.0.1-nightly.20250207)
-  - TensorFlowLiteSwift (0.0.1-nightly.20250126):
-    - TensorFlowLiteSwift/Core (= 0.0.1-nightly.20250126)
-  - TensorFlowLiteSwift/Core (0.0.1-nightly.20250126):
-    - TensorFlowLiteC (= 0.0.1-nightly.20250126)
-    - TensorFlowLiteSwift/Privacy (= 0.0.1-nightly.20250126)
-  - TensorFlowLiteSwift/Privacy (0.0.1-nightly.20250126)
+    - TensorFlowLiteSwift (= 2.17.0)
+  - lite_rt_for_flutter_libs_flex_delegate (0.0.1):
+    - Flutter
+    - TensorFlowLiteSelectTfOps (= 2.17.0)
+  - TensorFlowLiteC (2.17.0):
+    - TensorFlowLiteC/Core (= 2.17.0)
+  - TensorFlowLiteC/Core (2.17.0)
+  - TensorFlowLiteSelectTfOps (2.17.0)
+  - TensorFlowLiteSwift (2.17.0):
+    - TensorFlowLiteSwift/Core (= 2.17.0)
+  - TensorFlowLiteSwift/Core (2.17.0):
+    - TensorFlowLiteC (= 2.17.0)
+    - TensorFlowLiteSwift/Privacy (= 2.17.0)
+  - TensorFlowLiteSwift/Privacy (2.17.0)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - lite_rt_for_flutter_libs (from `.symlinks/plugins/lite_rt_for_flutter_libs/ios`)
+  - lite_rt_for_flutter_libs_flex_delegate (from `.symlinks/plugins/lite_rt_for_flutter_libs_flex_delegate/ios`)
 
 SPEC REPOS:
   trunk:
@@ -30,13 +33,16 @@ EXTERNAL SOURCES:
     :path: Flutter
   lite_rt_for_flutter_libs:
     :path: ".symlinks/plugins/lite_rt_for_flutter_libs/ios"
+  lite_rt_for_flutter_libs_flex_delegate:
+    :path: ".symlinks/plugins/lite_rt_for_flutter_libs_flex_delegate/ios"
 
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  lite_rt_for_flutter_libs: 07549c9879e081ba6dabc7fee0a3ef5d891c3033
-  TensorFlowLiteC: 13781c7f96816b85c768a4fb6c4bcf3de48dabb1
-  TensorFlowLiteSelectTfOps: b490e30d77d7ba5292c5340495c01561e61270da
-  TensorFlowLiteSwift: df36a5779c2f8a273a36670a09d80fa21483ee48
+  lite_rt_for_flutter_libs: c993b5c7275194bf136a002bc98232897ab17afa
+  lite_rt_for_flutter_libs_flex_delegate: e947b5fd8834393f41905c2e2d80214702ab158a
+  TensorFlowLiteC: eac6d689a8d391d1b202dc59e3d9165ba64aaf73
+  TensorFlowLiteSelectTfOps: e991d57ef32c40330a0bfcedd7955e6a5cab2efe
+  TensorFlowLiteSwift: 723fe42222815e72490c79feeff05305530de393
 
 PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
 

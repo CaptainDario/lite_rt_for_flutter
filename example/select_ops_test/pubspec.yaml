@@ -13,6 +13,8 @@ dependencies:
     path: ../../
   lite_rt_for_flutter_libs:
     path: ../../../lite_rt_for_flutter_libs/lite_rt_for_flutter_libs/
+  lite_rt_for_flutter_libs_flex_delegate:
+    path: ../../../lite_rt_for_flutter_libs/lite_rt_for_flutter_libs_flex_delegate/
 
   cupertino_icons: ^1.0.8
 
