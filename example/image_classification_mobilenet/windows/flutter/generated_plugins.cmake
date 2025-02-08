@@ -8,6 +8,7 @@ list(APPEND FLUTTER_PLUGIN_LIST
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST
   lite_rt_for_flutter_libs
+  lite_rt_for_flutter_libs_gpu_delegate
 )
 
 set(PLUGIN_BUNDLED_LIBRARIES)
