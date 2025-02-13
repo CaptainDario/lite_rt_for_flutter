@@ -1,36 +1,43 @@
-import 'dart:io';
-
-import 'package:flutter/services.dart';
-
-import 'package:lite_rt_for_dart/src/bindings/bindings.dart';
+import 'package:universal_io/io.dart';
+import 'package:universal_platform/universal_platform.dart';
+import 'package:flutter/foundation.dart';
 
 
+/// if a library path is set to this value, the `DynamicLibrary` shoudl be
+/// loaded with `DynamicLibrary.process()`
+String shouldUseDynamicLibraryProcess = "DynamicLibrary.process();";
+/// Message to throw when this platform does not support this lib
+String unsupportedPlatform = "Platform ${UniversalPlatform.operatingSystem} is not supported by";
 
 /// Get the `DynamicLibrary` of this plugin, ie. the base tf lite runtime
 String getLiteRTBaseLibraryPath(){
 
-  String libTfLitePath;
+  String libTfLitePath = "";
 
-  if (Platform.isAndroid) {
+  if (UniversalPlatform.isWeb){
+    libTfLitePath =
+      'assets/packages/lite_rt_for_flutter_libs_web_tfjs_tflite/web/assets/tflite/';
+  }
+  else if (UniversalPlatform.isAndroid) {
     libTfLitePath = 'libtensorflowlite_jni.so';
   }
-  else if (Platform.isIOS) {
+  else if (UniversalPlatform.isIOS) {
     libTfLitePath = shouldUseDynamicLibraryProcess;
   }
-  else if (Platform.isMacOS) {
+  else if (UniversalPlatform.isMacOS) {
     libTfLitePath = "libtensorflowlite_c.dylib";
   }
-  else if (Platform.isLinux) {
+  else if (UniversalPlatform.isLinux) {
     // TODO
     libTfLitePath = 'libtflite_c.so';
   }
-  else if (Platform.isWindows) {
+  else if (UniversalPlatform.isWindows) {
     // TODO
     libTfLitePath = 'libtflite_c.dll';
   }
-  // TODO web
-  else {
-    throw PlatformException(code: "Platform unsupported");
+
+  if(libTfLitePath == ""){
+    debugPrint("LiteRT is not supported on this platform");
   }
 
   return libTfLitePath;
@@ -42,24 +49,24 @@ String getLiteRTGpuDelegateLibraryPath(){
 
   String libTfLitePath = "";
 
-  if (Platform.isAndroid) {
+  if (UniversalPlatform.isAndroid) {
     libTfLitePath = "libtensorflowlite_gpu_jni.so";
   }
-  else if (Platform.isIOS) {
+  else if (UniversalPlatform.isIOS) {
     libTfLitePath = shouldUseDynamicLibraryProcess;
   }
-  else if (Platform.isMacOS) {
+  else if (UniversalPlatform.isMacOS) {
     libTfLitePath = "libtensorflowlite_gpu_delegate_c.dylib";
   }
-  else if (Platform.isLinux) {
-    // TODO
+  else if (UniversalPlatform.isLinux) {
+    // TODO Linux
   }
-  else if (Platform.isWindows) {
-    // TODO
+  else if (UniversalPlatform.isWindows) {
+    // TODO Windows
   }
-  // TODO web
-  else {
-    throw PlatformException(code: "Platform unsupported");
+  
+  if(libTfLitePath == ""){
+    debugPrint("$unsupportedPlatform the GPU delegate");
   }
 
   return libTfLitePath;
@@ -71,26 +78,16 @@ String getLiteRTCoreMLDelegateLibraryPath(){
 
   String libTfLitePath = "";
 
-  if (Platform.isAndroid) {
-    // TODO
-  }
-  else if (Platform.isIOS) {
+  if (UniversalPlatform.isIOS) {
     libTfLitePath = shouldUseDynamicLibraryProcess;
   }
-  else if (Platform.isMacOS) {
-    // TODO
-  }
-  else if (Platform.isLinux) {
-    // TODO
-  }
-  else if (Platform.isWindows) {
-    // TODO
-  }
-  // TODO web
-  else {
-    throw PlatformException(code: "Platform unsupported");
+  else if (UniversalPlatform.isMacOS) {
+    debugPrint("MacOS could be supported, upvote this issue if you are interested: https://github.com/google-ai-edge/LiteRT/issues/800");
   }
 
+  if(libTfLitePath == ""){
+    debugPrint("$unsupportedPlatform the CoreML delegate");
+  }
   return libTfLitePath;
 
 }
@@ -100,25 +97,25 @@ String getLiteRTFlexDelegateLibraryPath(){
 
   String libTfLitePath = "";
 
-  if (Platform.isAndroid) {
+  if (UniversalPlatform.isAndroid) {
     // TODO
-    //libTfLitePath = '${libTfLitePath}_jni.so';
+    //libTfLitePath = 'libtensorflowlite_flex_jni.so';
   }
-  else if (Platform.isIOS) {
+  else if (UniversalPlatform.isIOS) {
     libTfLitePath = shouldUseDynamicLibraryProcess;
   }
-  else if (Platform.isMacOS) {
+  else if (UniversalPlatform.isMacOS) {
     // TODO
   }
-  else if (Platform.isLinux) {
+  else if (UniversalPlatform.isLinux) {
     // TODO
   }
-  else if (Platform.isWindows) {
+  else if (UniversalPlatform.isWindows) {
     // TODO
   }
-  // TODO web
-  else {
-    throw PlatformException(code: "Platform unsupported");
+
+  if(libTfLitePath == ""){
+    debugPrint("$unsupportedPlatform the Flex delegate");
   }
 
   return libTfLitePath;
