@@ -15,13 +15,11 @@
  */
 
 import 'dart:developer';
-import 'dart:ffi';
 import 'dart:io';
 
 import 'package:camera/camera.dart';
 import 'package:flutter/services.dart';
 import 'package:image/image.dart';
-import 'package:lite_rt_for_flutter/flutter_interpreter.dart';
 import 'package:lite_rt_for_flutter/flutter_isolate_interpreter.dart';
 import 'package:lite_rt_for_flutter/lite_rt_for_flutter.dart';
 

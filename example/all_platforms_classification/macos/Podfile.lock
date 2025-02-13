@@ -1,0 +1,34 @@
+PODS:
+  - file_selector_macos (0.0.1):
+    - FlutterMacOS
+  - FlutterMacOS (1.0.0)
+  - lite_rt_for_flutter_libs (0.0.1):
+    - FlutterMacOS
+  - lite_rt_for_flutter_libs_macos (0.0.1):
+    - FlutterMacOS
+
+DEPENDENCIES:
+  - file_selector_macos (from `Flutter/ephemeral/.symlinks/plugins/file_selector_macos/macos`)
+  - FlutterMacOS (from `Flutter/ephemeral`)
+  - lite_rt_for_flutter_libs (from `Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs/macos`)
+  - lite_rt_for_flutter_libs_macos (from `Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs_macos/macos`)
+
+EXTERNAL SOURCES:
+  file_selector_macos:
+    :path: Flutter/ephemeral/.symlinks/plugins/file_selector_macos/macos
+  FlutterMacOS:
+    :path: Flutter/ephemeral
+  lite_rt_for_flutter_libs:
+    :path: Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs/macos
+  lite_rt_for_flutter_libs_macos:
+    :path: Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs_macos/macos
+
+SPEC CHECKSUMS:
+  file_selector_macos: cc3858c981fe6889f364731200d6232dac1d812d
+  FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
+  lite_rt_for_flutter_libs: 47bae83fd695ca2d51fafdf858478220e3fb6eaa
+  lite_rt_for_flutter_libs_macos: 75c0147d50a82d03b89af7d362967e6c140832bc
+
+PODFILE CHECKSUM: 236401fc2c932af29a9fcf0e97baeeb2d750d367
+
+COCOAPODS: 1.16.2

@@ -19,7 +19,7 @@ dependencies:
   lite_rt_for_flutter:
     path: ../../
   lite_rt_for_flutter_libs:
-    path: ../../../lite_rt_for_flutter_libs/lite_rt_for_flutter_libs/
+    path: ../../../lite_rt_for_flutter_libs/base/lite_rt_for_flutter_libs/
   lite_rt_for_flutter_libs_gpu_delegate:
     path: ../../../lite_rt_for_flutter_libs/lite_rt_for_flutter_libs_gpu_delegate/
   lite_rt_for_flutter_libs_core_ml_delegate:
