@@ -9,9 +9,9 @@ import 'package:lite_rt_for_flutter/libs.dart';
 /// lite_rt_for_flutter_libs* packages.
 /// 
 /// See `initLiteRT` for details on `loadLibs`
-void initLiteRTFlutter({bool loadLibs = false}){
+Future<void> initLiteRTFlutter() async {
 
-  initLiteRT(getLiteRTBaseLibraryPath(),
+  await initLiteRT(getLiteRTBaseLibraryPath(),
     gpuDelegatelibraryPath   : getLiteRTGpuDelegateLibraryPath(),
     coreMLDelegatelibraryPath: getLiteRTCoreMLDelegateLibraryPath(),
     flexDelegatelibraryPath  : getLiteRTFlexDelegateLibraryPath()
