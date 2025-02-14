@@ -28,11 +28,11 @@ String getLiteRTBaseLibraryPath(){
   }
   else if (UniversalPlatform.isLinux) {
     // TODO
-    libTfLitePath = 'libtflite_c.so';
+    libTfLitePath = 'libtensorflowlite_c.so';
   }
   else if (UniversalPlatform.isWindows) {
     // TODO
-    libTfLitePath = 'libtflite_c.dll';
+    libTfLitePath = 'libtensorflowlite_c.dll';
   }
 
   if(libTfLitePath == ""){
