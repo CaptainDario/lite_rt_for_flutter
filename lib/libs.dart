@@ -1,4 +1,3 @@
-import 'package:universal_io/io.dart';
 import 'package:universal_platform/universal_platform.dart';
 import 'package:flutter/foundation.dart';
 
