@@ -27,24 +27,6 @@ The only real difference between this (except some convenience methods) and the 
 
 ✅ - supported ; 🚧 - working on it ; 📋 planned ; ⛔ - not applicable ; ❌ - not supported by LiteRT ; ℹ️ - click to learn more
 
-### Libs packages
-
-#### Native
-
-* Base
-  * [lite_rt_for_flutter_libs](https://github.com/CaptainDario/lite_rt_for_flutter_libs/tree/main/lite_rt_for_flutter_libs)
-* GPU
-  * [lite_rt_for_flutter_libs_gpu_delegate](https://github.com/CaptainDario/lite_rt_for_flutter_libs/tree/main/lite_rt_for_flutter_libs_gpu_delegate)
-* CoreML
-  * [lite_rt_for_flutter_libs_core_ml_delegate](https://github.com/CaptainDario/lite_rt_for_flutter_libs/tree/main/lite_rt_for_flutter_libs_core_ml_delegate)
-* Flex
-  * [lite_rt_for_flutter_libs_flex_delegate](https://github.com/CaptainDario/lite_rt_for_flutter_libs/tree/main/lite_rt_for_flutter_libs_flex_delegate)
-
-#### Web
-
-* Base
-  * []()
-
 ## Setup
 
 In the dependency section of `pubspec.yaml` file, add `lite_rt_for_flutter: <your version>`
@@ -53,24 +35,17 @@ In the dependency section of `pubspec.yaml` file, add `lite_rt_for_flutter: <you
 dependencies:
   # The binding between Flutter/Dart and native code
   lite_rt_for_flutter:
-    git:
-      url:  https://github.com/CaptainDario/lite_rt_for_flutter
-      ref: <THE_VERSION_YOU_WANT>
-```
+    version: <THE_VERSION_YOU_WANT>
 
-Additionally, you need at least the base LiteRT, choose the packages you need from below
-
-```yaml
-dependencies:
-
-  ...
-
-  # Includes the Base LiteRT runtime with XNNPack delegate
+  # Additionally, you need the base LiteRT libraries (includes XNNPack delegate)
   lite_rt_for_flutter_libs:
     git:
       url:  https://github.com/CaptainDario/lite_rt_for_flutter_libs
       path: lite_rt_for_flutter_libs
       ref: <THE_VERSION_YOU_WANT>
+  # optionally you can set specific versions per platform
+  lite_rt_for_flutter_libs_{android|macos|...}:
+    version: <THE_VERSION_YOU_WANT>
 ```
 
 Finally, run some ML on-device!
@@ -84,12 +59,31 @@ initLiteRTFlutter()
 // Load a model from asset
 final interpreter = await FlutterInterpreter.fromAsset('asset/path/to/your/model.tflite');
 
-``` 
+```
 
 You can learn more about how to use this library here:
-  * [the dart package](https://github.com/CaptainDario/lite_rt_for_dart?tab=readme-ov-file#example).
-  * For a full example see the [examples folder](./example/)
+
+* [the dart package](https://github.com/CaptainDario/lite_rt_for_dart?tab=readme-ov-file#example).
+* For som complete examples, see the [examples folder](./example/)
+
+## What about delegates?
+
+Additional delegate libraries can be included for supported platforms.
+See the above table for which delegate supports which platform.
+
+```yaml
+dependencies:
+  # Include the CoreML delegate
+  lite_rt_for_flutter_libs_coreml:
+    version: <THE_VERSION_YOU_WANT>
+  # Include the flex delegate
+  lite_rt_for_flutter_libs_flex:
+    version: <THE_VERSION_YOU_WANT>
+  # Include the gpu delegate
+  lite_rt_for_flutter_libs_gpu:
+    version: <THE_VERSION_YOU_WANT>
+```
 
 ## I want to use my own libs
 
-Sure thing! See the [dart package](https://github.com/CaptainDario/lite_rt_for_dart) to use any library. 
+Sure thing! See the [dart package](https://github.com/CaptainDario/lite_rt_for_dart) to use any library.
