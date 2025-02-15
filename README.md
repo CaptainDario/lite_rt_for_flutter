@@ -85,7 +85,7 @@ dependencies:
 ## Web support
 
 This library does NOT directly support web.
-However, using the following hacky approach, web support can be achieved the [tflit web package](https://pub.dev/packages/tflite_web).
+However, using the following hacky approach, web support can be achieved by using the [tflit web package](https://pub.dev/packages/tflite_web).
 Under the hood it uses tfjs' tf lite support using webassembly.
 
 Binaries can be included using
