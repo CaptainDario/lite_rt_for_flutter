@@ -4,6 +4,12 @@ PODS:
   - FlutterMacOS (1.0.0)
   - lite_rt_for_flutter_libs (0.0.1):
     - FlutterMacOS
+  - lite_rt_for_flutter_libs_core_ml_delegate (0.0.1):
+    - FlutterMacOS
+  - lite_rt_for_flutter_libs_gpu_delegate (0.0.1):
+    - FlutterMacOS
+  - lite_rt_for_flutter_libs_macos (0.0.1):
+    - FlutterMacOS
   - path_provider_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
@@ -12,6 +18,9 @@ DEPENDENCIES:
   - file_selector_macos (from `Flutter/ephemeral/.symlinks/plugins/file_selector_macos/macos`)
   - FlutterMacOS (from `Flutter/ephemeral`)
   - lite_rt_for_flutter_libs (from `Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs/macos`)
+  - lite_rt_for_flutter_libs_core_ml_delegate (from `Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs_core_ml_delegate/macos`)
+  - lite_rt_for_flutter_libs_gpu_delegate (from `Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs_gpu_delegate/macos`)
+  - lite_rt_for_flutter_libs_macos (from `Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs_macos/macos`)
   - path_provider_foundation (from `Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/darwin`)
 
 EXTERNAL SOURCES:
@@ -21,13 +30,22 @@ EXTERNAL SOURCES:
     :path: Flutter/ephemeral
   lite_rt_for_flutter_libs:
     :path: Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs/macos
+  lite_rt_for_flutter_libs_core_ml_delegate:
+    :path: Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs_core_ml_delegate/macos
+  lite_rt_for_flutter_libs_gpu_delegate:
+    :path: Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs_gpu_delegate/macos
+  lite_rt_for_flutter_libs_macos:
+    :path: Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs_macos/macos
   path_provider_foundation:
     :path: Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/darwin
 
 SPEC CHECKSUMS:
   file_selector_macos: cc3858c981fe6889f364731200d6232dac1d812d
   FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
-  lite_rt_for_flutter_libs: 50a6b41f72330480ffa1fc35fdab55f20819595e
+  lite_rt_for_flutter_libs: 06638d4c736f42b2f3cae2905317ae044b3c2d03
+  lite_rt_for_flutter_libs_core_ml_delegate: 15ef1e77b4e2163c09d3be7e7a624e649f099295
+  lite_rt_for_flutter_libs_gpu_delegate: 08b3a5f6a64e6e5ac07b22b6f520e28a2482e74f
+  lite_rt_for_flutter_libs_macos: 44cd4ada4d859e2ae226dfd4e7f4ff2a066c66ae
   path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
 
 PODFILE CHECKSUM: 236401fc2c932af29a9fcf0e97baeeb2d750d367
