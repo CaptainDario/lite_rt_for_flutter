@@ -20,10 +20,10 @@ The only real difference between this (except some convenience methods) and the 
 |        |   Android  |     iOS    |   Windows  |    MacOS   |    Linux   |     Web    |
 |--------|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
 |        |    arm     |     arm    | arm \| x86 | arm \| x86 | arm \| x86 | js \| wasm |
-| Base   |     ✅     |   ✅   | [ℹ️](https://github.com/CaptainDario/lite_rt_for_flutter_libs/issues/1) \| 🚧 |   ✅ \| ✅  |   🚧   |   🚧 \| 🚧   |
+| Base   |     ✅     |   ✅   | [ℹ️](https://github.com/CaptainDario/lite_rt_for_flutter_libs/issues/1) \| 🚧 |   ✅ \| ✅  |   🚧   |   ℹ️ \| 🚧   |
 | GPU    |     ✅     |   ✅   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
-| CoreML |     ⛔     |   ✅   |   ⛔ \| ⛔   | [ℹ️](https://github.com/google-ai-edge/LiteRT/issues/800) |   ⛔ \| ⛔   |   ⛔ \| ⛔   |
-| Flex   |     📋     |   ✅   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
+| CoreML |     ⛔     |   ✅   |   ⛔ \| ⛔   | [ℹ️](https://github.com/CaptainDario/lite_rt_for_flutter_libs/issues/2) |   ⛔ \| ⛔   |   ⛔ \| ⛔   |
+| Flex   |     ✅     |   ✅   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
 
 ✅ - supported ; 🚧 - working on it ; 📋 planned ; ⛔ - not applicable ; ❌ - not supported by LiteRT ; ℹ️ - click to learn more
 
@@ -80,6 +80,23 @@ dependencies:
   lite_rt_for_flutter_libs_gpu:
     version: <THE_VERSION_YOU_WANT>
 ```
+
+## Web support
+
+This library does NOT directly support web.
+However, using the following hacky approach, web support can be achieved the [tflit web package](https://pub.dev/packages/tflite_web).
+Under the hood it uses tfjs' tf lite support using webassembly.
+
+Binaries can be included using
+
+```yaml
+dependencies:
+  # includes xnnpack delegate
+  lite_rt_for_flutter_libs_web:
+    version: 0.0.1-alpha10
+```
+
+Now you need to define inference based on native / web, for an example see [example/all_platforms_classification].
 
 ## I want to use my own libs
 
