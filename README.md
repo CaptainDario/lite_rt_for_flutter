@@ -20,7 +20,7 @@ The only real difference between this (except some convenience methods) and the 
 |        |   Android  |     iOS    |   Windows  |    MacOS   |    Linux   |     Web    |
 |--------|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
 |        |    arm     |     arm    | arm \| x86 | arm \| x86 | arm \| x86 | js \| wasm |
-| Base   |     ✅     |   ✅   | [ℹ️](https://github.com/CaptainDario/lite_rt_for_flutter_libs/issues/1) \| 🚧 |   ✅ \| ✅  |   🚧   |   ℹ️ \| 🚧   |
+| Base   |     ✅     |   ✅   | [ℹ️](https://github.com/CaptainDario/lite_rt_for_flutter_libs/issues/1) \| ✅ |   ✅ \| ✅  |   ✅ \| ✅  |   [ℹ️](#web-support) \| [ℹ️](https://github.com/CaptainDario/lite_rt_for_flutter_libs/issues/1)   |
 | GPU    |     ✅     |   ✅   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
 | CoreML |     ⛔     |   ✅   |   ⛔ \| ⛔   | [ℹ️](https://github.com/CaptainDario/lite_rt_for_flutter_libs/issues/2) |   ⛔ \| ⛔   |   ⛔ \| ⛔   |
 | Flex   |     ✅     |   ✅   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
