@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:lite_rt_for_flutter/lite_rt_for_flutter.dart';
 import 'package:image/image.dart' as img;
+import 'package:loading_indicator/loading_indicator.dart';
 import 'package:tuple/tuple.dart';
+import 'inference.dart';
 
 
 
@@ -40,8 +41,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  /// the tensorflow lite model
-  Interpreter? interpreter;
   /// let the user pick images
   final ImagePicker picker = ImagePicker();
   /// the currently loaded image
@@ -66,7 +65,11 @@ class _MyHomePageState extends State<MyHomePage> {
           future: init(),
           builder: (context, snapshot) {
 
-            if(interpreter == null) return Container();
+            if(interpreter == null) {
+              return LoadingIndicator(
+                indicatorType: Indicator.ballScaleMultiple,
+              );
+            }
 
             return Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -95,17 +98,15 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  Future<bool> init() async {
+  Future init() async {
 
     await initTfLite();
     labels = await loadLabels();
 
-    return true;
-
   }
 
   /// Initializes the TF Lite runtime
-  Future<bool> initTfLite() async {
+  Future initTfLite() async {
 
     if(interpreter != null) return true;
 
@@ -113,10 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     final buffer = (await rootBundle.load("assets/mobilenet_quant.tflite"))
       .buffer.asUint8List();
-    
-    interpreter = await Interpreter.fromBuffer(buffer);
-
-    return true;
+    loadModel(buffer);
 
   }
 
@@ -149,10 +147,9 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: img.ColorRgb8(0, 0, 0));
 
     // run inference
-    final out = interpreter!.runForMultipleInputsWebJs(padded.getBytes());
-      //shape: [1, 224, 224, 3],
-      //type: tf_web.TFLiteDataType.int32
-    final d = Uint8List.fromList(out.dataSync());
+    final List<int> out = await runInference(
+      padded.getBytes(), [List.filled(1001, 0)]);
+    final d = out;
 
     // get 3 top predictions
     preds.clear();
