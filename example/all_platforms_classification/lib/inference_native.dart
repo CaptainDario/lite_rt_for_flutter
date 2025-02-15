@@ -1,12 +1,3 @@
-/*
-final out = interpreter!.runForMultipleInputsWebJs(padded.getBytes());
-      //shape: [1, 224, 224, 3],
-      //type: tf_web.TFLiteDataType.int32
-    final d = Uint8List.fromList(out.dataSync());
-*/
-
-/// This file defines the shared interface between the native and web
-/// implementation
 import 'dart:typed_data';
 
 import 'package:lite_rt_for_flutter/lite_rt_for_flutter.dart' as litert;
