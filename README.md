@@ -39,10 +39,7 @@ dependencies:
 
   # Additionally, you need the base LiteRT libraries (includes XNNPack delegate)
   lite_rt_for_flutter_libs:
-    git:
-      url:  https://github.com/CaptainDario/lite_rt_for_flutter_libs
-      path: lite_rt_for_flutter_libs
-      ref: <THE_VERSION_YOU_WANT>
+    version: <THE_VERSION_YOU_WANT>
   # optionally you can set specific versions per platform
   lite_rt_for_flutter_libs_{android|macos|...}:
     version: <THE_VERSION_YOU_WANT>
