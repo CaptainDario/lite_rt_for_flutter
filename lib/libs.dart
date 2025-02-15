@@ -27,11 +27,9 @@ String getLiteRTBaseLibraryPath(){
     libTfLitePath = "libtensorflowlite_c.dylib";
   }
   else if (UniversalPlatform.isLinux) {
-    // TODO
     libTfLitePath = 'libtensorflowlite_c.so';
   }
   else if (UniversalPlatform.isWindows) {
-    // TODO
     libTfLitePath = 'libtensorflowlite_c.dll';
   }
 
