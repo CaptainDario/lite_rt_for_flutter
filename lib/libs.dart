@@ -32,6 +32,9 @@ String getLiteRTBaseLibraryPath(){
   else if (UniversalPlatform.isWindows) {
     libTfLitePath = 'libtensorflowlite_c.dll';
   }
+  else if (UniversalPlatform.isWeb){
+    libTfLitePath = '"assets/packages/lite_rt_for_flutter_libs_web_tfjs_tflite/web/assets/tflite"';
+  }
 
   if(libTfLitePath == ""){
     debugPrint("LiteRT is not supported on this platform");
