@@ -307,7 +307,7 @@ packages:
       path: "../../../lite_rt_for_flutter_libs/base/lite_rt_for_flutter_libs_android"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "2.17.0"
   lite_rt_for_flutter_libs_ios:
     dependency: transitive
     description:
@@ -321,28 +321,36 @@ packages:
       path: "../../../lite_rt_for_flutter_libs/base/lite_rt_for_flutter_libs_linux"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "2.17.0"
   lite_rt_for_flutter_libs_macos:
     dependency: transitive
     description:
       path: "../../../lite_rt_for_flutter_libs/base/lite_rt_for_flutter_libs_macos"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "2.17.0"
   lite_rt_for_flutter_libs_web_tfjs_tflite:
     dependency: transitive
     description:
       path: "../../../lite_rt_for_flutter_libs/base/lite_rt_for_flutter_libs_web_tfjs_tflite"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.1-alpha10"
   lite_rt_for_flutter_libs_windows:
     dependency: transitive
     description:
       path: "../../../lite_rt_for_flutter_libs/base/lite_rt_for_flutter_libs_windows"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "2.17.0"
+  loading_indicator:
+    dependency: "direct main"
+    description:
+      name: loading_indicator
+      sha256: a101ffb2aa3e646137d7810bfa90b50525dd3f72c01235b6df7491cf6af6f284
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.1.1"
   matcher:
     dependency: transitive
     description:
@@ -471,9 +479,10 @@ packages:
   tflite_web:
     dependency: transitive
     description:
-      path: "../../../tflite-web"
-      relative: true
-    source: path
+      name: tflite_web
+      sha256: "2a50f23bbb1638e32ebe5068005008cb69d8d57e3d0edb755d13359ccbb3ff87"
+      url: "https://pub.dev"
+    source: hosted
     version: "0.2.2"
   tuple:
     dependency: "direct main"
