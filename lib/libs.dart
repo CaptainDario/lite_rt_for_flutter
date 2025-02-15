@@ -97,8 +97,7 @@ String getLiteRTFlexDelegateLibraryPath(){
   String libTfLitePath = "";
 
   if (UniversalPlatform.isAndroid) {
-    // TODO
-    //libTfLitePath = 'libtensorflowlite_flex_jni.so';
+    libTfLitePath = 'libtensorflowlite_flex_jni.so';
   }
   else if (UniversalPlatform.isIOS) {
     libTfLitePath = shouldUseDynamicLibraryProcess;
