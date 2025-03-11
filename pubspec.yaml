@@ -2,7 +2,6 @@ name: lite_rt_for_flutter
 description: Plugin to run tf lite models in flutter apps.
 version: 0.0.1
 homepage: https://github.com/CaptainDario/lite_rt_for_flutter
-publish_to: none
 
 environment:
   sdk: ^3.6.0
@@ -14,8 +13,7 @@ dependencies:
   universal_platform: ^1.1.0
   universal_io: ^2.2.2
   plugin_platform_interface: ^2.0.2
-  lite_rt_for_dart:
-    path: ../lite_rt_for_dart
+  lite_rt_for_dart: 0.0.2
 
 dev_dependencies:
   ffi: ^2.1.3
