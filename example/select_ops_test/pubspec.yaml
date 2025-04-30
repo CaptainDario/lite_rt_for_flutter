@@ -9,12 +9,21 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
   lite_rt_for_flutter:
     path: ../../
-  lite_rt_for_flutter_libs:
-    path: ../../../lite_rt_for_flutter_libs/lite_rt_for_flutter_libs/
-  lite_rt_for_flutter_libs_flex_delegate:
-    path: ../../../lite_rt_for_flutter_libs/lite_rt_for_flutter_libs_flex_delegate/
+  
+  # base libs
+  lite_rt_for_flutter_libs_android:
+    git:
+      url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
+      path: base/lite_rt_for_flutter_libs_android
+
+  # flex libs
+  lite_rt_for_flutter_libs_flex_delegate_android:
+    git:
+      url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
+      path: flex/lite_rt_for_flutter_libs_flex_delegate_android
 
   cupertino_icons: ^1.0.8
 

@@ -1,7 +1,7 @@
 import 'dart:typed_data';
 
 import 'package:lite_rt_for_flutter/libs.dart';
-import 'package:lite_rt_for_flutter_libs/lite_rt_for_flutter_libs.dart';
+import 'package:tflite_web/tflite_web.dart';
 
 
 

@@ -39,11 +39,11 @@ dependencies:
     version: <THE_VERSION_YOU_WANT>
 
   # Additionally, you need the base LiteRT libraries (includes XNNPack delegate)
-  lite_rt_for_flutter_libs:
-    version: <THE_VERSION_YOU_WANT>
-  # optionally you can set specific versions per platform
-  lite_rt_for_flutter_libs_{android|macos|...}:
-    version: <THE_VERSION_YOU_WANT>
+  lite_rt_for_flutter_libs_<android|linux|windows|macos|ios|web}:
+    git: https://github.com/CaptainDario/lite_rt_for_flutter_libs
+    # the branch you want to use, can be used to set specific versions
+    branch: base_android_2_16_1
+
 ```
 
 Finally, run some ML on-device!
@@ -62,7 +62,7 @@ final interpreter = await FlutterInterpreter.fromAsset('asset/path/to/your/model
 You can learn more about how to use this library here:
 
 * [the dart package](https://github.com/CaptainDario/lite_rt_for_dart?tab=readme-ov-file#example).
-* For som complete examples, see the [examples folder](./example/)
+* For some complete examples, see the [examples folder](./example/)
 
 ## What about delegates?
 
@@ -72,13 +72,13 @@ See the above table for which delegate supports which platform.
 ```yaml
 dependencies:
   # Include the CoreML delegate
-  lite_rt_for_flutter_libs_coreml:
-    version: <THE_VERSION_YOU_WANT>
+  lite_rt_for_flutter_libs_coreml_delegate_ios:
+    version: 
   # Include the flex delegate
-  lite_rt_for_flutter_libs_flex:
+  lite_rt_for_flutter_libs_flex_delegate_<Android|iOS>:
     version: <THE_VERSION_YOU_WANT>
   # Include the gpu delegate
-  lite_rt_for_flutter_libs_gpu:
+  lite_rt_for_flutter_libs_gpu_delegate_<Android|iOS>:
     version: <THE_VERSION_YOU_WANT>
 ```
 

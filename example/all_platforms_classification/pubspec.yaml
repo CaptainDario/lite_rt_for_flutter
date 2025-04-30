@@ -19,8 +19,11 @@ dependencies:
   universal_platform: ^1.1.0
   lite_rt_for_flutter:
     path: ../../../lite_rt_for_flutter
-  lite_rt_for_flutter_libs:
-    path: ../../../lite_rt_for_flutter_libs/base/lite_rt_for_flutter_libs
+
+  lite_rt_for_flutter_libs_android:
+    git:
+      url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
+      path: base/lite_rt_for_flutter_libs_android
 
 dev_dependencies:
   flutter_test:

@@ -31,3 +31,8 @@ migrate_working_dir/
 .flutter-plugins
 .flutter-plugins-dependencies
 build/
+
+
+
+example/all_platforms_classification/android/app/.cxx
+example/select_ops_test/android/app/.cxx

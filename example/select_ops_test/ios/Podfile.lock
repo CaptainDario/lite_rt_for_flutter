@@ -1,48 +1,15 @@
 PODS:
   - Flutter (1.0.0)
-  - lite_rt_for_flutter_libs (0.0.1):
-    - Flutter
-    - TensorFlowLiteSwift (= 2.17.0)
-  - lite_rt_for_flutter_libs_flex_delegate (0.0.1):
-    - Flutter
-    - TensorFlowLiteSelectTfOps (= 2.17.0)
-  - TensorFlowLiteC (2.17.0):
-    - TensorFlowLiteC/Core (= 2.17.0)
-  - TensorFlowLiteC/Core (2.17.0)
-  - TensorFlowLiteSelectTfOps (2.17.0)
-  - TensorFlowLiteSwift (2.17.0):
-    - TensorFlowLiteSwift/Core (= 2.17.0)
-  - TensorFlowLiteSwift/Core (2.17.0):
-    - TensorFlowLiteC (= 2.17.0)
-    - TensorFlowLiteSwift/Privacy (= 2.17.0)
-  - TensorFlowLiteSwift/Privacy (2.17.0)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
-  - lite_rt_for_flutter_libs (from `.symlinks/plugins/lite_rt_for_flutter_libs/ios`)
-  - lite_rt_for_flutter_libs_flex_delegate (from `.symlinks/plugins/lite_rt_for_flutter_libs_flex_delegate/ios`)
-
-SPEC REPOS:
-  trunk:
-    - TensorFlowLiteC
-    - TensorFlowLiteSelectTfOps
-    - TensorFlowLiteSwift
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
-  lite_rt_for_flutter_libs:
-    :path: ".symlinks/plugins/lite_rt_for_flutter_libs/ios"
-  lite_rt_for_flutter_libs_flex_delegate:
-    :path: ".symlinks/plugins/lite_rt_for_flutter_libs_flex_delegate/ios"
 
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  lite_rt_for_flutter_libs: c993b5c7275194bf136a002bc98232897ab17afa
-  lite_rt_for_flutter_libs_flex_delegate: e947b5fd8834393f41905c2e2d80214702ab158a
-  TensorFlowLiteC: eac6d689a8d391d1b202dc59e3d9165ba64aaf73
-  TensorFlowLiteSelectTfOps: e991d57ef32c40330a0bfcedd7955e6a5cab2efe
-  TensorFlowLiteSwift: 723fe42222815e72490c79feeff05305530de393
 
 PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
 

@@ -49,6 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final b = rawAssetFile.buffer.asUint8List();
     InterpreterOptions o = InterpreterOptions();
     o.addDelegate(XNNPackDelegate());
+    
     interpreter = Interpreter.fromBuffer(b);
     return false;
   }
@@ -77,7 +78,10 @@ class _MyHomePageState extends State<MyHomePage> {
         }
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => interpreter.invoke(),
+        onPressed: () {
+          interpreter.invoke();
+          print("Seems like it works!");
+        },
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
