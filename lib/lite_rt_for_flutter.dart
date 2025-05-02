@@ -15,6 +15,6 @@ void initLiteRTFlutter() {
     gpuDelegatelibraryPath   : getLiteRTGpuDelegateLibraryPath(),
     coreMLDelegatelibraryPath: getLiteRTCoreMLDelegateLibraryPath(),
     flexDelegatelibraryPath  : getLiteRTFlexDelegateLibraryPath()
-    );
+  );
 
 }
