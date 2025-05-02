@@ -11,12 +11,24 @@ Future initLiteRTFlutter() async {
 }
 
 Future loadModel(Uint8List buffer) async {
+
+  litert.InterpreterOptions io = litert.InterpreterOptions();
+  
+  // ios
+  io.addDelegate(litert.GpuDelegate());
+  //io.addDelegate(litert.CoreMlDelegate(options: litert.CoreMlDelegateOptions(coremlVersion: 3)));
+
+  //io.useNnApiForAndroid = true;
+
   interpreter = litert.Interpreter.fromBuffer(buffer);
+
 }
 
 Future runInference(Object inputs, List<List<int>> outputs) async {
 
   interpreter!.run(inputs, outputs);
+
+  print((interpreter!.lastNativeInferenceDurationMicroSeconds).toInt());
 
   return outputs[0];
 

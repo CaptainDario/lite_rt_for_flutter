@@ -296,6 +296,42 @@ packages:
       url: "https://github.com/CaptainDario/lite_rt_for_flutter_libs"
     source: git
     version: "0.0.1"
+  lite_rt_for_flutter_libs_coreml_delegate_ios:
+    dependency: "direct main"
+    description:
+      path: "coreml/lite_rt_for_flutter_libs_coreml_delegate_ios"
+      ref: HEAD
+      resolved-ref: "715caa647657ae3f5f1f3581cb5c6bb9bf695ccf"
+      url: "https://github.com/CaptainDario/lite_rt_for_flutter_libs"
+    source: git
+    version: "0.0.1"
+  lite_rt_for_flutter_libs_gpu_delegate_android:
+    dependency: "direct main"
+    description:
+      path: "gpu/lite_rt_for_flutter_libs_gpu_delegate_android"
+      ref: HEAD
+      resolved-ref: "488129bba533119587a1dec11ca5fc3e31caaa29"
+      url: "https://github.com/CaptainDario/lite_rt_for_flutter_libs"
+    source: git
+    version: "0.0.1"
+  lite_rt_for_flutter_libs_gpu_delegate_ios:
+    dependency: "direct main"
+    description:
+      path: "gpu/lite_rt_for_flutter_libs_gpu_delegate_ios"
+      ref: HEAD
+      resolved-ref: "715caa647657ae3f5f1f3581cb5c6bb9bf695ccf"
+      url: "https://github.com/CaptainDario/lite_rt_for_flutter_libs"
+    source: git
+    version: "0.0.1"
+  lite_rt_for_flutter_libs_ios:
+    dependency: "direct main"
+    description:
+      path: "base/lite_rt_for_flutter_libs_ios"
+      ref: HEAD
+      resolved-ref: "715caa647657ae3f5f1f3581cb5c6bb9bf695ccf"
+      url: "https://github.com/CaptainDario/lite_rt_for_flutter_libs"
+    source: git
+    version: "0.0.1"
   loading_indicator:
     dependency: "direct main"
     description:
@@ -502,5 +538,5 @@ packages:
     source: hosted
     version: "6.5.0"
 sdks:
-  dart: ">=3.7.0-0 <4.0.0"
+  dart: ">=3.7.0 <4.0.0"
   flutter: ">=3.24.0"

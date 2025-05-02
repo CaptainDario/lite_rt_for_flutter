@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
     ByteData rawAssetFile = await rootBundle.load("select_ops_model/converted_model.tflite");
     final b = rawAssetFile.buffer.asUint8List();
     InterpreterOptions o = InterpreterOptions();
-    o.addDelegate(XNNPackDelegate());
+    //o.addDelegate(XNNPackDelegate());
     
     interpreter = Interpreter.fromBuffer(b);
     return false;

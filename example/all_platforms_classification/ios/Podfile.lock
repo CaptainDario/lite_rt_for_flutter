@@ -1,0 +1,71 @@
+PODS:
+  - Flutter (1.0.0)
+  - image_picker_ios (0.0.1):
+    - Flutter
+  - lite_rt_for_flutter_libs_coreml_delegate_ios (0.0.1):
+    - Flutter
+    - TensorFlowLiteSwift/CoreML (= 2.17.0)
+  - lite_rt_for_flutter_libs_gpu_delegate_ios (0.0.1):
+    - Flutter
+    - TensorFlowLiteSwift/Metal (= 2.17.0)
+  - lite_rt_for_flutter_libs_ios (0.0.1):
+    - Flutter
+    - TensorFlowLiteSwift (= 2.17.0)
+  - TensorFlowLiteC (2.17.0):
+    - TensorFlowLiteC/Core (= 2.17.0)
+  - TensorFlowLiteC/Core (2.17.0)
+  - TensorFlowLiteC/CoreML (2.17.0):
+    - TensorFlowLiteC/Core
+  - TensorFlowLiteC/Metal (2.17.0):
+    - TensorFlowLiteC/Core
+  - TensorFlowLiteSwift (2.17.0):
+    - TensorFlowLiteSwift/Core (= 2.17.0)
+  - TensorFlowLiteSwift/Core (2.17.0):
+    - TensorFlowLiteC (= 2.17.0)
+    - TensorFlowLiteSwift/Privacy (= 2.17.0)
+  - TensorFlowLiteSwift/CoreML (2.17.0):
+    - TensorFlowLiteC/CoreML (= 2.17.0)
+    - TensorFlowLiteSwift/Core (= 2.17.0)
+    - TensorFlowLiteSwift/Privacy (= 2.17.0)
+  - TensorFlowLiteSwift/Metal (2.17.0):
+    - TensorFlowLiteC/Metal (= 2.17.0)
+    - TensorFlowLiteSwift/Core (= 2.17.0)
+    - TensorFlowLiteSwift/Privacy (= 2.17.0)
+  - TensorFlowLiteSwift/Privacy (2.17.0)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
+  - lite_rt_for_flutter_libs_coreml_delegate_ios (from `.symlinks/plugins/lite_rt_for_flutter_libs_coreml_delegate_ios/ios`)
+  - lite_rt_for_flutter_libs_gpu_delegate_ios (from `.symlinks/plugins/lite_rt_for_flutter_libs_gpu_delegate_ios/ios`)
+  - lite_rt_for_flutter_libs_ios (from `.symlinks/plugins/lite_rt_for_flutter_libs_ios/ios`)
+
+SPEC REPOS:
+  trunk:
+    - TensorFlowLiteC
+    - TensorFlowLiteSwift
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  image_picker_ios:
+    :path: ".symlinks/plugins/image_picker_ios/ios"
+  lite_rt_for_flutter_libs_coreml_delegate_ios:
+    :path: ".symlinks/plugins/lite_rt_for_flutter_libs_coreml_delegate_ios/ios"
+  lite_rt_for_flutter_libs_gpu_delegate_ios:
+    :path: ".symlinks/plugins/lite_rt_for_flutter_libs_gpu_delegate_ios/ios"
+  lite_rt_for_flutter_libs_ios:
+    :path: ".symlinks/plugins/lite_rt_for_flutter_libs_ios/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  image_picker_ios: c560581cceedb403a6ff17f2f816d7fea1421fc1
+  lite_rt_for_flutter_libs_coreml_delegate_ios: a97992bbce65d31f5a22cdac9efd8e1ce359b829
+  lite_rt_for_flutter_libs_gpu_delegate_ios: ab75641f24455382d1ca32739d55a7a223b15df9
+  lite_rt_for_flutter_libs_ios: 1829d786cf8d814e33afd30ebd4d25b42e2a2720
+  TensorFlowLiteC: eac6d689a8d391d1b202dc59e3d9165ba64aaf73
+  TensorFlowLiteSwift: 723fe42222815e72490c79feeff05305530de393
+
+PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+
+COCOAPODS: 1.16.2

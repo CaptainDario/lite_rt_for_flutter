@@ -20,10 +20,30 @@ dependencies:
   lite_rt_for_flutter:
     path: ../../../lite_rt_for_flutter
 
+  # ANDROID
   lite_rt_for_flutter_libs_android:
     git:
       url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
       path: base/lite_rt_for_flutter_libs_android
+  lite_rt_for_flutter_libs_gpu_delegate_android:
+    git:
+      url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
+      path: gpu/lite_rt_for_flutter_libs_gpu_delegate_android
+
+  # IOS
+  lite_rt_for_flutter_libs_ios:
+    git:
+      url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
+      path: base/lite_rt_for_flutter_libs_ios
+  lite_rt_for_flutter_libs_gpu_delegate_ios:
+    git:
+      url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
+      path: gpu/lite_rt_for_flutter_libs_gpu_delegate_ios
+  lite_rt_for_flutter_libs_coreml_delegate_ios:
+    git:
+      url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
+      path: coreml/lite_rt_for_flutter_libs_coreml_delegate_ios
+
 
 dev_dependencies:
   flutter_test:
