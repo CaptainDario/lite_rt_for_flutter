@@ -118,10 +118,9 @@ packages:
   lite_rt_for_dart:
     dependency: transitive
     description:
-      name: lite_rt_for_dart
-      sha256: c5b7eb1d2469b600004e8fd29523de853a301537976866c168b1d39d7f73c3a6
-      url: "https://pub.dev"
-    source: hosted
+      path: "/Users/darioklepoch/dev/flutter_packages/lite_rt_for_dart/"
+      relative: false
+    source: path
     version: "0.0.2"
   lite_rt_for_flutter:
     dependency: "direct main"
@@ -157,10 +156,26 @@ packages:
       url: "https://github.com/CaptainDario/lite_rt_for_flutter_libs"
     source: git
     version: "0.0.1"
+  lite_rt_for_flutter_libs_flex_delegate_macos:
+    dependency: "direct main"
+    description:
+      path: "/Users/darioklepoch/dev/flutter_packages/lite_rt_for_flutter_libs/flex/lite_rt_for_flutter_libs_flex_delegate_macos"
+      relative: false
+    source: path
+    version: "0.0.1"
   lite_rt_for_flutter_libs_ios:
     dependency: "direct main"
     description:
-      path: "/Users/darioklepoch/dev/flutter_packages/lite_rt_for_flutter_libs/base/lite_rt_for_flutter_libs_ios"
+      path: "base/lite_rt_for_flutter_libs_ios"
+      ref: HEAD
+      resolved-ref: "972340f3b9f08f4a9a11d5ffabda49ff23a0691c"
+      url: "https://github.com/CaptainDario/lite_rt_for_flutter_libs"
+    source: git
+    version: "0.0.1"
+  lite_rt_for_flutter_libs_macos:
+    dependency: "direct main"
+    description:
+      path: "/Users/darioklepoch/dev/flutter_packages/lite_rt_for_flutter_libs/base/lite_rt_for_flutter_libs_macos"
       relative: false
     source: path
     version: "0.0.1"

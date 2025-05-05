@@ -1,27 +1,27 @@
 PODS:
   - FlutterMacOS (1.0.0)
-  - lite_rt_for_flutter_libs (0.0.1):
+  - lite_rt_for_flutter_libs_flex_delegate_macos (0.0.1):
     - FlutterMacOS
-  - lite_rt_for_flutter_libs_flex_delegate (0.0.1):
+  - lite_rt_for_flutter_libs_macos (0.0.1):
     - FlutterMacOS
 
 DEPENDENCIES:
   - FlutterMacOS (from `Flutter/ephemeral`)
-  - lite_rt_for_flutter_libs (from `Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs/macos`)
-  - lite_rt_for_flutter_libs_flex_delegate (from `Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs_flex_delegate/macos`)
+  - lite_rt_for_flutter_libs_flex_delegate_macos (from `Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs_flex_delegate_macos/macos`)
+  - lite_rt_for_flutter_libs_macos (from `Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs_macos/macos`)
 
 EXTERNAL SOURCES:
   FlutterMacOS:
     :path: Flutter/ephemeral
-  lite_rt_for_flutter_libs:
-    :path: Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs/macos
-  lite_rt_for_flutter_libs_flex_delegate:
-    :path: Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs_flex_delegate/macos
+  lite_rt_for_flutter_libs_flex_delegate_macos:
+    :path: Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs_flex_delegate_macos/macos
+  lite_rt_for_flutter_libs_macos:
+    :path: Flutter/ephemeral/.symlinks/plugins/lite_rt_for_flutter_libs_macos/macos
 
 SPEC CHECKSUMS:
   FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
-  lite_rt_for_flutter_libs: 47bae83fd695ca2d51fafdf858478220e3fb6eaa
-  lite_rt_for_flutter_libs_flex_delegate: 52c6e1707b19475f8c8108de83cadf345c82ea4d
+  lite_rt_for_flutter_libs_flex_delegate_macos: 0884944abf1938ac4ab21e1eed700713d3bb3ad5
+  lite_rt_for_flutter_libs_macos: 44cd4ada4d859e2ae226dfd4e7f4ff2a066c66ae
 
 PODFILE CHECKSUM: 236401fc2c932af29a9fcf0e97baeeb2d750d367
 
