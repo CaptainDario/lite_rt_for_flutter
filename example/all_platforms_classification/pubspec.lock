@@ -323,6 +323,13 @@ packages:
       url: "https://github.com/CaptainDario/lite_rt_for_flutter_libs"
     source: git
     version: "0.0.1"
+  lite_rt_for_flutter_libs_gpu_delegate_macos:
+    dependency: "direct main"
+    description:
+      path: "/Users/darioklepoch/dev/flutter_packages/lite_rt_for_flutter_libs/gpu/lite_rt_for_flutter_libs_gpu_delegate_macos"
+      relative: false
+    source: path
+    version: "0.0.3"
   lite_rt_for_flutter_libs_ios:
     dependency: "direct main"
     description:
@@ -331,6 +338,13 @@ packages:
       resolved-ref: "715caa647657ae3f5f1f3581cb5c6bb9bf695ccf"
       url: "https://github.com/CaptainDario/lite_rt_for_flutter_libs"
     source: git
+    version: "0.0.1"
+  lite_rt_for_flutter_libs_macos:
+    dependency: "direct main"
+    description:
+      path: "/Users/darioklepoch/dev/flutter_packages/lite_rt_for_flutter_libs/base/lite_rt_for_flutter_libs_macos"
+      relative: false
+    source: path
     version: "0.0.1"
   loading_indicator:
     dependency: "direct main"

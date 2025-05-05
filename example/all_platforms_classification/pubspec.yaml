@@ -30,6 +30,18 @@ dependencies:
       url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
       path: gpu/lite_rt_for_flutter_libs_gpu_delegate_android
 
+  # MACOS
+  lite_rt_for_flutter_libs_macos:
+    #git:
+    #  url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
+    #  path: base/lite_rt_for_flutter_libs_macos
+    path: /Users/darioklepoch/dev/flutter_packages/lite_rt_for_flutter_libs/base/lite_rt_for_flutter_libs_macos
+  lite_rt_for_flutter_libs_gpu_delegate_macos:
+    #git:
+    #  url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
+    #  path: gpu/lite_rt_for_flutter_libs_gpu_delegate_macos
+    path: /Users/darioklepoch/dev/flutter_packages/lite_rt_for_flutter_libs/gpu/lite_rt_for_flutter_libs_gpu_delegate_macos
+
   # IOS
   lite_rt_for_flutter_libs_ios:
     git:

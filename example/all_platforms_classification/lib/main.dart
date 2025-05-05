@@ -137,8 +137,8 @@ class _MyHomePageState extends State<MyHomePage> {
     // resize image
     int w = decoded.width; int h = decoded.height;
     final resized = img.copyResize(decoded,
-      height: (w < h ? 224 : null),
-      width : (w > h ? 224 : null),
+      height: (w < h || w == h ? 224 : null),
+      width : (w > h || w == h ? 224 : null),
     );
     
     // pad image

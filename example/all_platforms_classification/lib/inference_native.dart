@@ -15,7 +15,7 @@ Future loadModel(Uint8List buffer) async {
   litert.InterpreterOptions io = litert.InterpreterOptions();
   
   // ios
-  io.addDelegate(litert.GpuDelegate());
+  //io.addDelegate(litert.GpuDelegate());
   //io.addDelegate(litert.CoreMlDelegate(options: litert.CoreMlDelegateOptions(coremlVersion: 3)));
 
   //io.useNnApiForAndroid = true;
