@@ -104,7 +104,7 @@ String getLiteRTFlexDelegateLibraryPath(){
     libTfLitePath = shouldUseDynamicLibraryProcess;
   }
   else if (UniversalPlatform.isMacOS) {
-    // TODO
+    libTfLitePath = 'libtensorflowlite_flex_delegate_c.dylib';
   }
   else if (UniversalPlatform.isLinux) {
     // TODO
