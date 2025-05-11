@@ -21,12 +21,12 @@ The only real difference between this (except some convenience methods) and the 
 |        |   Android  |     iOS    |   Windows  |    MacOS   |    Linux   |     Web    |
 |--------|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
 |        |    arm     |     arm    | arm \| x86 | arm \| x86 | arm \| x86 | js \| wasm |
-| Base   |     ✅     |   ✅   | [ℹ️](https://github.com/CaptainDario/lite_rt_for_flutter_libs/issues/1) \| ✅ |   ✅ \| ✅  |   ✅ \| ✅  |   [ℹ️](#web-support) \| [ℹ️](https://github.com/CaptainDario/lite_rt_for_flutter_libs/issues/1)   |
-| GPU    |     ✅     |   ✅   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
-| CoreML |     ⛔     |   ✅   |   ⛔ \| ⛔   | [ℹ️](https://github.com/CaptainDario/lite_rt_for_flutter_libs/issues/2) |   ⛔ \| ⛔   |   ⛔ \| ⛔   |
-| Flex   |     ✅     |   ✅   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
+| Base   |     2.16.1     |   2.17.0   | 2.19.0 \| 2.19.0 |   2.17.0 \| 2.17.0  |   2.17.0 \| 2.17.0  |   [ℹ️](#web-support) \| [ℹ️](#web-support)   |
+| GPU    |     2.16.1     |   2.17.0   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
+| CoreML |       ⛔       |   2.17.0   |   ⛔ \| ⛔   | [ℹ️](https://github.com/CaptainDario/lite_rt_for_flutter_libs/issues/2) |   ⛔ \| ⛔   |   ⛔ \| ⛔   |
+| Flex   |     2.16.1     |   2.17.0   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
 
-✅ - supported ; 🚧 - working on it ; 📋 planned ; ⛔ - not applicable ; ❌ - not supported by LiteRT ; ℹ️ - click to learn more
+x.x - supported version ; 🚧 - working on it ; 📋 planned ; ⛔ - not applicable ; ❌ - not supported by LiteRT ; ℹ️ - click to learn more
 
 ## Setup
 
@@ -97,7 +97,7 @@ dependencies:
     version: 0.0.1-alpha10
 ```
 
-Now you need to define inference based on native / web, for an example see [example/all_platforms_classification].
+Now you need to define inference based on native / web, for an example see [example/all_platforms_classification](example/all_platforms_classification).
 
 ## I want to use my own libs
 
