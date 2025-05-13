@@ -21,10 +21,10 @@ The only real difference between this (except some convenience methods) and the 
 |        |   Android  |     iOS    |   Windows  |    MacOS   |    Linux   |     Web    |
 |--------|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
 |        |    arm     |     arm    | arm \| x86 | arm \| x86 | arm \| x86 | js \| wasm |
-| Base   |     2.16.1     |   2.17.0   | 2.19.0 \| 2.19.0 |   2.17.0 \| 2.17.0  |   2.17.0 \| 2.17.0  |   [ℹ️](#web-support) \| [ℹ️](#web-support)   |
-| GPU    |     2.16.1     |   2.17.0   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
+| Base   |     2.16.1     |   2.17.0   | ❌ \| 2.19.0 |   2.17.0 \| 2.17.0  |   2.17.0 \| 2.17.0  |   [ℹ️](#web-support) \| [ℹ️](#web-support)   |
+| GPU    |     2.16.1     |   2.17.0   |   ❌ \| ❌   |   2.17.0 \| 2.17.0  |   2.17.0 \| 2.17.0  |   ❌ \| ❌   |
 | CoreML |       ⛔       |   2.17.0   |   ⛔ \| ⛔   | [ℹ️](https://github.com/CaptainDario/lite_rt_for_flutter_libs/issues/2) |   ⛔ \| ⛔   |   ⛔ \| ⛔   |
-| Flex   |     2.16.1     |   2.17.0   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |   ❌ \| ❌   |
+| Flex   |     2.16.1     |   2.17.0   |   ❌ \| ❌   |   2.17.0 \| 2.17.0  |   2.17.0 \| 2.17.0  |   ❌ \| ❌   |
 
 x.x - supported version ; 🚧 - working on it ; 📋 planned ; ⛔ - not applicable ; ❌ - not supported by LiteRT ; ℹ️ - click to learn more
 
