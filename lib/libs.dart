@@ -59,10 +59,10 @@ String getLiteRTGpuDelegateLibraryPath(){
     libTfLitePath = "libtensorflowlite_gpu_delegate_c.dylib";
   }
   else if (UniversalPlatform.isLinux) {
-    // TODO Linux
+    libTfLitePath = "libtensorflowlite_gpu_delegate_c.so";
   }
   else if (UniversalPlatform.isWindows) {
-    // TODO Windows
+    libTfLitePath = "libtensorflowlite_gpu_delegate_c.dll";
   }
   
   if(libTfLitePath == ""){
@@ -107,10 +107,10 @@ String getLiteRTFlexDelegateLibraryPath(){
     libTfLitePath = 'libtensorflowlite_flex_delegate_c.dylib';
   }
   else if (UniversalPlatform.isLinux) {
-    // TODO
+    libTfLitePath = "libtensorflowlite_flex_delegate_c.so";
   }
   else if (UniversalPlatform.isWindows) {
-    // TODO
+    libTfLitePath = "libtensorflowlite_flex_delegate_c.dll";
   }
 
   if(libTfLitePath == ""){
