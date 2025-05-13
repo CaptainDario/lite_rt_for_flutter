@@ -11,7 +11,7 @@ dependencies:
     sdk: flutter
 
   lite_rt_for_flutter:
-    path: ../../../lite_rt_for_flutter
+    path: E:/projects/flutter_plugins/lite_rt_for_flutter
   
   # base libs
   lite_rt_for_flutter_libs_android:
@@ -23,10 +23,13 @@ dependencies:
       url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
       path: base/lite_rt_for_flutter_libs_ios
   lite_rt_for_flutter_libs_macos:
-    #git:
-    #  url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
-    #  path: base/lite_rt_for_flutter_libs_macos
-    path: /Users/darioklepoch/dev/flutter_packages/lite_rt_for_flutter_libs/base/lite_rt_for_flutter_libs_macos
+    git:
+      url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
+      path: base/lite_rt_for_flutter_libs_macos
+  lite_rt_for_flutter_libs_windows:
+    git:
+      url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
+      path: base/lite_rt_for_flutter_libs_windows
 
   # flex libs
   lite_rt_for_flutter_libs_flex_delegate_android:
@@ -38,10 +41,14 @@ dependencies:
       url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
       path: flex/lite_rt_for_flutter_libs_flex_delegate_ios
   lite_rt_for_flutter_libs_flex_delegate_macos:
+    git:
+      url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
+      path: flex/lite_rt_for_flutter_libs_flex_delegate_macos
+  lite_rt_for_flutter_libs_flex_delegate_windows:
     #git:
     #  url: https://github.com/CaptainDario/lite_rt_for_flutter_libs
-    #  path: base/lite_rt_for_flutter_libs_macos
-    path: /Users/darioklepoch/dev/flutter_packages/lite_rt_for_flutter_libs/flex/lite_rt_for_flutter_libs_flex_delegate_macos
+    #  path: flex/lite_rt_for_flutter_libs_flex_delegate_windows
+    path: E:/projects/flutter_plugins/lite_rt_for_flutter_libs/flex/lite_rt_for_flutter_libs_flex_delegate_windows/
 
   cupertino_icons: ^1.0.8
 

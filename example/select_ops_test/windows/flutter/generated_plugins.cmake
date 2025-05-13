@@ -3,9 +3,11 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+  lite_rt_for_flutter_libs_flex_delegate_windows
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST
+  lite_rt_for_flutter_libs_windows
 )
 
 set(PLUGIN_BUNDLED_LIBRARIES)
